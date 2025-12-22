@@ -25,3 +25,20 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
+// Вычисляем точную длину пути
+const path = document.getElementById('drawing-line');
+const length = path.getTotalLength();
+
+// Устанавливаем CSS свойства
+path.style.strokeDasharray = length;
+path.style.strokeDashoffset = length;
+
+// Запускаем анимацию
+path.animate([
+    { strokeDashoffset: length },
+    { strokeDashoffset: 0 }
+], {
+    duration: 5000,
+    easing: 'ease-in-out',
+    fill: 'forwards'
+});
