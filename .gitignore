@@ -31,4 +31,8 @@ Thumbs.db
 
 # Temporary Files
 *.tmp
+<<<<<<< HEAD
 *.temp
+=======
+*.temp
+>>>>>>> 367bb0b216b6dbfc6a376fa3a29d3742739d82d7
