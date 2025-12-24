@@ -7,6 +7,12 @@
     <title>GOEE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Подключение Flatpickr для календаря -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
@@ -28,7 +34,7 @@
                 <a href="#about" class="menu__link">About</a>
               </li>
               <li class="menu__item">
-                <a href="#motorhome" class="menu__link">Motorhome</a>
+                <a href="#motorhomes" class="menu__link">Motorhome</a>
               </li>
               <li class="menu__item">
                 <a href="#how" class="menu__link">How to rent</a>
@@ -86,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="about">
         <div class="container">
           <div class="advantages__wrapper">
             <div class="advantages__item">
@@ -118,7 +124,7 @@
           </div>
         </div>
       </section>
-      <section class="section about" id="about">
+      <section class="section about">
         <div class="container">
           <h2 class="section__title">about</h2>
           <div class="about__wrapper">
@@ -139,19 +145,1718 @@
                 <span class="about__title--line">road</span>
               </p>
             </div>
-            <div class="about__item"></div>
-            <div class="about__item"></div>
+            <div class="about__item">
+              <p class="about__item--desc">
+                We believe the best journeys are those without a strict itinerary. Founded by a
+                teamof passionate travelers, GOEE is dedicated to providing not just a vehicle, but
+                a key to unforgettable experiences.
+              </p>
+            </div>
+            <div class="about__item">
+              <p class="about__item--desc">
+                Our motorhomes are meticulously maintained and equipped to ensure your trip is
+                seamless, safe, and filled with nothing but freedom and discovery.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="section motorhome" id="motorhome"><h2>Motorhome</h2></section>
-      <section class="section how" id="how"><h2>How to rent</h2></section>
-      <section class="section routes" id="routes"><h2>Routes</h2></section>
-      <section class="section reviews" id="reviews"><h2>Reviews</h2></section>
-      <section class="section faq" id="faq"><h2>FAQ</h2></section>
-      <section class="section contacts" id="contacts"><h2>Contacts</h2></section>
+      <section class="section motorhomes" id="motorhomes">
+        <div class="container">
+          <div class="section__wrapper section__wrapper--center">
+            <h2 class="section__title">motorhome</h2>
+            <p class="section__desc">Your Home, Wherever the Road Takes You</p>
+          </div>
+          <div class="motorhomes__wrapper">
+            <div class="motorhomes__item">
+              <div class="motorhomes__left">
+                <div class="motorhomes__header">
+                  <div class="motorhomes__header--item">
+                    <span class="motorhomes__left--model">Model</span>
+                    <h3 class="motorhomes__left--title">Adria S75 SL 2023</h3>
+                  </div>
+                  <div class="motorhomes__header--item">
+                    <ul class="motorhomes__rating">
+                      <li class="motorhomes__rating--item">
+                        <svg
+                          class="motorhomes__rating--star"
+                          width="18"
+                          height="17"
+                          viewBox="0 0 18 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                            stroke="#A5E600" />
+                        </svg>
+                      </li>
+                      <li class="motorhomes__rating--item">
+                        <svg
+                          class="motorhomes__rating--star"
+                          width="18"
+                          height="17"
+                          viewBox="0 0 18 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                            stroke="#A5E600" />
+                        </svg>
+                      </li>
+                      <li class="motorhomes__rating--item">
+                        <svg
+                          class="motorhomes__rating--star"
+                          width="18"
+                          height="17"
+                          viewBox="0 0 18 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                            stroke="#A5E600" />
+                        </svg>
+                      </li>
+                      <li class="motorhomes__rating--item">
+                        <svg
+                          class="motorhomes__rating--star"
+                          width="18"
+                          height="17"
+                          viewBox="0 0 18 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                            stroke="#A5E600" />
+                        </svg>
+                      </li>
+                      <li class="motorhomes__rating--item">
+                        <svg
+                          class="motorhomes__rating--star"
+                          width="18"
+                          height="17"
+                          viewBox="0 0 18 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                            stroke="#A5E600" />
+                        </svg>
+                      </li>
+                    </ul>
+                    <button class="motorhomes__share">
+                      <svg
+                        class="motorhomes__share--icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.46505 11.2931C9.59805 10.1601 11.5741 10.1601 12.7071 11.2931L13.4141 12.0001L14.8281 10.5861L14.1211 9.87906C13.1781 8.93506 11.9221 8.41406 10.5861 8.41406C9.25005 8.41406 7.99405 8.93506 7.05105 9.87906L4.92905 12.0001C3.99384 12.939 3.46875 14.2103 3.46875 15.5356C3.46875 16.8608 3.99384 18.1321 4.92905 19.0711C5.39283 19.5357 5.9439 19.9041 6.55058 20.155C7.15725 20.4059 7.80755 20.5344 8.46405 20.5331C9.12073 20.5345 9.77122 20.4061 10.3781 20.1552C10.9849 19.9043 11.5362 19.5359 12.0001 19.0711L12.7071 18.3641L11.2931 16.9501L10.5861 17.6571C10.0225 18.2181 9.25973 18.533 8.46455 18.533C7.66938 18.533 6.90658 18.2181 6.34305 17.6571C5.78156 17.0938 5.46626 16.3309 5.46626 15.5356C5.46626 14.7402 5.78156 13.9773 6.34305 13.4141L8.46505 11.2931Z"
+                          fill="#2E2F36" />
+                        <path
+                          d="M11.9999 4.92899L11.2929 5.63599L12.7069 7.04999L13.4139 6.34299C13.9774 5.78198 14.7402 5.46702 15.5354 5.46702C16.3305 5.46702 17.0933 5.78198 17.6569 6.34299C18.2184 6.90626 18.5337 7.66916 18.5337 8.46449C18.5337 9.25983 18.2184 10.0227 17.6569 10.586L15.5349 12.707C14.4019 13.84 12.4259 13.84 11.2929 12.707L10.5859 12L9.17188 13.414L9.87887 14.121C10.8219 15.065 12.0779 15.586 13.4139 15.586C14.7499 15.586 16.0059 15.065 16.9489 14.121L19.0709 12C20.0061 11.061 20.5312 9.78975 20.5312 8.46449C20.5312 7.13924 20.0061 5.86797 19.0709 4.92899C18.1324 3.9928 16.861 3.46704 15.5354 3.46704C14.2098 3.46704 12.9383 3.9928 11.9999 4.92899Z"
+                          fill="#2E2F36" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="motorhomes__slider">
+                  <div class="motorhomes__slider--wrapper">
+                    <!-- Кнопка лупы для лайтбокса -->
+                    <button class="lightbox-toggle" id="lightboxToggle">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                          fill="#2E2F36" />
+                      </svg>
+                    </button>
+
+                    <!-- Главное изображение -->
+                    <img
+                      src="https://images.unsplash.com/photo-1562183242-b8361c156b41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                      alt="Adria S75 SL 2023"
+                      class="motorhomes__slider--main"
+                      id="mainImage" />
+
+                    <!-- Карусель миниатюр -->
+                    <nav class="motorhomes__nav">
+                      <ul class="motorhomes__nav--list" id="thumbnailList">
+                        <!-- Миниатюры будут добавлены через JavaScript -->
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="motorhomes__right">
+                <!-- Табы -->
+                <nav class="motorhomes-tabs">
+                  <ul class="motorhomes-tabs--list">
+                    <li class="motorhomes-tabs--item">
+                      <button class="motorhomes-tabs--btn active" data-tab="overview">
+                        Overview
+                      </button>
+                    </li>
+                    <li class="motorhomes-tabs--item">
+                      <button class="motorhomes-tabs--btn" data-tab="specifications">
+                        Specifications
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- Контент табов -->
+                <div class="motorhomes-content active" id="overview">
+                  <div class="motorhomes-data--item">
+                    <h4 class="motorhomes-data--title">Description</h4>
+                    <p class="motorhomes-data--desc">
+                      <i
+                        >"6 proper beds, no van crampedness, no need to rebuild every night — just B
+                        license and go!"</i
+                      >
+                    </p>
+                    <p class="motorhomes-data--desc">
+                      Alcove gives fixed sleeping spots for 4–6 people, semi-integrated make you
+                      fiddle with transformations, full-integrated are pricey and heavy. Perfect for
+                      first family trip.
+                    </p>
+                  </div>
+                  <div class="motorhomes-data--item">
+                    <h4 class="motorhomes-data--title">Driving & Tech</h4>
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Parameter</td>
+                          <td>Data</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Equipment</td>
+                          <td>4 Sleeps / 5 Belted Seats</td>
+                        </tr>
+                        <tr>
+                          <td>License</td>
+                          <td>Category B</td>
+                        </tr>
+                        <tr>
+                          <td>Fuel</td>
+                          <td>Diesel / 120 litres / ~800 km</td>
+                        </tr>
+                        <tr>
+                          <td>Payload</td>
+                          <td>Up to 700 kg</td>
+                        </tr>
+                        <tr>
+                          <td>Transmission</td>
+                          <td>Manual/Auto</td>
+                        </tr>
+                        <tr>
+                          <td>Age / experience</td>
+                          <td>25 | 2+ years</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="motorhomes-content" id="specifications">
+                  <div class="motorhomes-data--item">
+                    <h4 class="motorhomes-data--title">Technical Specifications</h4>
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Parameter</td>
+                          <td>Data</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Length</td>
+                          <td>7.5 m</td>
+                        </tr>
+                        <tr>
+                          <td>Width</td>
+                          <td>2.3 m</td>
+                        </tr>
+                        <tr>
+                          <td>Height</td>
+                          <td>3.0 m</td>
+                        </tr>
+                        <tr>
+                          <td>Weight</td>
+                          <td>3500 kg</td>
+                        </tr>
+                        <tr>
+                          <td>Engine</td>
+                          <td>2.3L Diesel, 150 HP</td>
+                        </tr>
+                        <tr>
+                          <td>Tank Capacity</td>
+                          <td>120 liters</td>
+                        </tr>
+                        <tr>
+                          <td>Water Tank</td>
+                          <td>100 liters</td>
+                        </tr>
+                        <tr>
+                          <td>Battery</td>
+                          <td>2x 100Ah LiFePO4</td>
+                        </tr>
+                        <tr>
+                          <td>Solar Panels</td>
+                          <td>400W</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- Форма бронирования -->
+                <div class="motorhomes-form">
+                  <button class="motorhomes-form--pick" id="openCalendar">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.75 10.25C0.75 6.479 0.75 4.593 1.922 3.422C3.094 2.251 4.979 2.25 8.75 2.25H12.75C16.521 2.25 18.407 2.25 19.578 3.422C20.749 4.594 20.75 6.479 20.75 10.25V12.25C20.75 16.021 20.75 17.907 19.578 19.078C18.406 20.249 16.521 20.25 12.75 20.25H8.75C4.979 20.25 3.093 20.25 1.922 19.078C0.751 17.906 0.75 16.021 0.75 12.25V10.25Z"
+                        stroke="white"
+                        stroke-width="1.5" />
+                      <path
+                        opacity="0.5"
+                        d="M5.75 2.25V0.75M15.75 2.25V0.75M1.25 7.25H20.25"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M16.75 15.25C16.75 15.5152 16.6446 15.7696 16.4571 15.9571C16.2696 16.1446 16.0152 16.25 15.75 16.25C15.4848 16.25 15.2304 16.1446 15.0429 15.9571C14.8554 15.7696 14.75 15.5152 14.75 15.25C14.75 14.9848 14.8554 14.7304 15.0429 14.5429C15.2304 14.3554 15.4848 14.25 15.75 14.25C16.0152 14.25 16.2696 14.3554 16.4571 14.5429C16.6446 14.7304 16.75 14.9848 16.75 15.25ZM16.75 11.25C16.75 11.5152 16.6446 11.7696 16.4571 11.9571C16.2696 12.1446 16.0152 12.25 15.75 12.25C15.4848 12.25 15.2304 12.1446 15.0429 11.9571C14.8554 11.7696 14.75 11.5152 14.75 11.25C14.75 10.9848 14.8554 10.7304 15.0429 10.5429C15.2304 10.3554 15.4848 10.25 15.75 10.25C16.0152 10.25 16.2696 10.3554 16.4571 10.5429C16.6446 10.7304 16.75 10.9848 16.75 11.25ZM11.75 15.25C11.75 15.5152 11.6446 15.7696 11.4571 15.9571C11.2696 16.1446 11.0152 16.25 10.75 16.25C10.4848 16.25 10.2304 16.1446 10.0429 15.9571C9.85536 15.7696 9.75 15.5152 9.75 15.25C9.75 14.9848 9.85536 14.7304 10.0429 14.5429C10.2304 14.3554 10.4848 14.25 10.75 14.25C11.0152 14.25 11.2696 14.3554 11.4571 14.5429C11.6446 14.7304 11.75 14.9848 11.75 15.25ZM11.75 11.25C11.75 11.5152 11.6446 11.7696 11.4571 11.9571C11.2696 12.1446 11.0152 12.25 10.75 12.25C10.4848 12.25 10.2304 12.1446 10.0429 11.9571C9.85536 11.7696 9.75 11.5152 9.75 11.25C9.75 10.9848 9.85536 10.7304 10.0429 10.5429C10.2304 10.3554 10.4848 10.25 10.75 10.25C11.0152 10.25 11.2696 10.3554 11.4571 10.5429C11.6446 10.7304 11.75 10.9848 11.75 11.25ZM6.75 15.25C6.75 15.5152 6.64464 15.7696 6.45711 15.9571C6.26957 16.1446 6.01522 16.25 5.75 16.25C5.48478 16.25 5.23043 16.1446 5.04289 15.9571C4.85536 15.7696 4.75 15.5152 4.75 15.25C4.75 14.9848 4.85536 14.7304 5.04289 14.5429C5.23043 14.3554 5.48478 14.25 5.75 14.25C6.01522 14.25 6.26957 14.3554 6.45711 14.5429C6.64464 14.7304 6.75 14.9848 6.75 15.25ZM6.75 11.25C6.75 11.5152 6.64464 11.7696 6.45711 11.9571C6.26957 12.1446 6.01522 12.25 5.75 12.25C5.48478 12.25 5.23043 12.1446 5.04289 11.9571C4.85536 11.7696 4.75 11.5152 4.75 11.25C4.75 10.9848 4.85536 10.7304 5.04289 10.5429C5.23043 10.3554 5.48478 10.25 5.75 10.25C6.01522 10.25 6.26957 10.3554 6.45711 10.5429C6.64464 10.7304 6.75 10.9848 6.75 11.25Z"
+                        fill="white" />
+                    </svg>
+                    <span class="motorhomes-form-period" id="selectedPeriod"
+                      >29 NOV - 13 DEC 2025 (14 DAYS)</span
+                    >
+                  </button>
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Parameter</td>
+                        <td>Data</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Equipment</td>
+                        <td>4 Sleeps / 5 Belted Seats</td>
+                      </tr>
+                      <tr>
+                        <td>License</td>
+                        <td>Category B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class="motorhomes-buttons">
+                    <li class="motorhomes-buttons--item">
+                      <button class="motorhomes-buttons--btn">get in touch</button>
+                    </li>
+                    <li class="motorhomes-buttons--item">
+                      <button class="motorhomes-buttons--btn">book now</button>
+                    </li>
+                  </ul>
+                  <input type="checkbox" class="radio" id="agreeTerms" checked />
+                  <label for="agreeTerms"
+                    >I agree to the <a href="">rental terms</a> and <a href="">privacy policy</a
+                    >.</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Лайтбокс -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox__container">
+          <button class="lightbox__close" id="lightboxClose">&times;</button>
+          <img src="" alt="" class="lightbox__image" id="lightboxImage" />
+          <div class="lightbox__nav">
+            <button class="lightbox__prev" id="lightboxPrev">‹</button>
+            <button class="lightbox__next" id="lightboxNext">›</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно календаря -->
+      <div class="calendar-modal" id="calendarModal">
+        <div class="calendar-content">
+          <button class="calendar-close" id="calendarClose">&times;</button>
+          <h3 class="calendar-title">Select Rental Period</h3>
+          <input type="text" id="datepicker" placeholder="Select dates..." />
+          <div class="calendar-buttons">
+            <button class="calendar-btn cancel" id="cancelDates">Cancel</button>
+            <button class="calendar-btn apply" id="applyDates">Apply Dates</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="section how" id="how">
+        <div class="container">
+          <div class="section__wrapper section__wrapper--center">
+            <h2 class="section__title">how to rent</h2>
+            <p class="section__desc">Your Road Trip, in 4 Easy Steps</p>
+          </div>
+          <div class="how__wrapper">
+            <div class="how__item">
+              <span class="how__item--step">Step one</span>
+              <h3 class="how__item--title">Book Online</h3>
+              <img src="images/how-1.png" alt="" class="how__item--img" />
+              <p class="how__item--desc">
+                Select your dates and the perfect motorhome from our fleet. Get an instant quote.
+              </p>
+              <div class="how__item--arrow">
+                <svg
+                  class="how__item--icon"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.9856 11.4858C17.1137 11.3566 17.1855 11.1819 17.1855 11C17.1855 10.818 17.1137 10.6434 16.9856 10.5141L12.4023 5.93081C12.3393 5.86326 12.2634 5.80909 12.1791 5.77151C12.0948 5.73394 12.0037 5.71373 11.9114 5.7121C11.8191 5.71047 11.7274 5.72745 11.6418 5.76203C11.5562 5.79661 11.4784 5.84808 11.4132 5.91336C11.3479 5.97864 11.2964 6.05641 11.2618 6.14201C11.2273 6.22762 11.2103 6.31931 11.2119 6.41162C11.2135 6.50393 11.2337 6.59497 11.2713 6.67931C11.3089 6.76364 11.3631 6.83954 11.4306 6.90248L14.8406 10.3125L5.49978 10.3125C5.31745 10.3125 5.14258 10.3849 5.01365 10.5138C4.88471 10.6428 4.81228 10.8176 4.81228 11C4.81228 11.1823 4.88471 11.3572 5.01365 11.4861C5.14258 11.615 5.31745 11.6875 5.49978 11.6875L14.8406 11.6875L11.4306 15.0975C11.3092 15.2278 11.2431 15.4002 11.2462 15.5783C11.2493 15.7564 11.3215 15.9263 11.4475 16.0523C11.5734 16.1783 11.7434 16.2504 11.9215 16.2536C12.0996 16.2567 12.272 16.1906 12.4023 16.0691L16.9856 11.4858Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="how__item">
+              <span class="how__item--step">Step two</span>
+              <h3 class="how__item--title">Pick Up & Go</h3>
+              <img src="images/how-2.png" alt="" class="how__item--img" />
+              <p class="how__item--desc">
+                Visit our location for a seamless handover. We'll give you a full tour and explain
+                everything.
+              </p>
+              <div class="how__item--arrow">
+                <svg
+                  class="how__item--icon"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.9856 11.4858C17.1137 11.3566 17.1855 11.1819 17.1855 11C17.1855 10.818 17.1137 10.6434 16.9856 10.5141L12.4023 5.93081C12.3393 5.86326 12.2634 5.80909 12.1791 5.77151C12.0948 5.73394 12.0037 5.71373 11.9114 5.7121C11.8191 5.71047 11.7274 5.72745 11.6418 5.76203C11.5562 5.79661 11.4784 5.84808 11.4132 5.91336C11.3479 5.97864 11.2964 6.05641 11.2618 6.14201C11.2273 6.22762 11.2103 6.31931 11.2119 6.41162C11.2135 6.50393 11.2337 6.59497 11.2713 6.67931C11.3089 6.76364 11.3631 6.83954 11.4306 6.90248L14.8406 10.3125L5.49978 10.3125C5.31745 10.3125 5.14258 10.3849 5.01365 10.5138C4.88471 10.6428 4.81228 10.8176 4.81228 11C4.81228 11.1823 4.88471 11.3572 5.01365 11.4861C5.14258 11.615 5.31745 11.6875 5.49978 11.6875L14.8406 11.6875L11.4306 15.0975C11.3092 15.2278 11.2431 15.4002 11.2462 15.5783C11.2493 15.7564 11.3215 15.9263 11.4475 16.0523C11.5734 16.1783 11.7434 16.2504 11.9215 16.2536C12.0996 16.2567 12.272 16.1906 12.4023 16.0691L16.9856 11.4858Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="how__item">
+              <span class="how__item--step">Step three</span>
+              <h3 class="how__item--title">Explore Freely</h3>
+              <img src="images/how-3.png" alt="" class="how__item--img" />
+              <p class="how__item--desc">
+                Hit the open road! Enjoy 24/7 roadside assistance for total peace of mind.
+              </p>
+              <div class="how__item--arrow">
+                <svg
+                  class="how__item--icon"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.9856 11.4858C17.1137 11.3566 17.1855 11.1819 17.1855 11C17.1855 10.818 17.1137 10.6434 16.9856 10.5141L12.4023 5.93081C12.3393 5.86326 12.2634 5.80909 12.1791 5.77151C12.0948 5.73394 12.0037 5.71373 11.9114 5.7121C11.8191 5.71047 11.7274 5.72745 11.6418 5.76203C11.5562 5.79661 11.4784 5.84808 11.4132 5.91336C11.3479 5.97864 11.2964 6.05641 11.2618 6.14201C11.2273 6.22762 11.2103 6.31931 11.2119 6.41162C11.2135 6.50393 11.2337 6.59497 11.2713 6.67931C11.3089 6.76364 11.3631 6.83954 11.4306 6.90248L14.8406 10.3125L5.49978 10.3125C5.31745 10.3125 5.14258 10.3849 5.01365 10.5138C4.88471 10.6428 4.81228 10.8176 4.81228 11C4.81228 11.1823 4.88471 11.3572 5.01365 11.4861C5.14258 11.615 5.31745 11.6875 5.49978 11.6875L14.8406 11.6875L11.4306 15.0975C11.3092 15.2278 11.2431 15.4002 11.2462 15.5783C11.2493 15.7564 11.3215 15.9263 11.4475 16.0523C11.5734 16.1783 11.7434 16.2504 11.9215 16.2536C12.0996 16.2567 12.272 16.1906 12.4023 16.0691L16.9856 11.4858Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="how__item">
+              <span class="how__item--step">Step four</span>
+              <h3 class="how__item--title">Return with Ease</h3>
+              <img src="images/how-4.png" alt="" class="how__item--img" />
+              <p class="how__item--desc">
+                Bring the motorhome back on the agreed date. We handle the cleaning!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section routes" id="routes">
+        <!-- Карта как изображение -->
+        <div class="routes__map-container">
+          <img
+            src="https://images.unsplash.com/photo-1587270613291-c0c72d431cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+            alt="Norway Map"
+            class="map-image active"
+            id="norway-map" />
+          <img
+            src="https://images.unsplash.com/photo-1516550893923-42d28cdd3b0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+            alt="Austria Map"
+            class="map-image"
+            id="austria-map" />
+
+          <!-- Маркеры для Норвегии -->
+          <div class="markers-container active" id="norway-markers">
+            <!-- Маршрутная линия -->
+            <svg class="route-line active" viewBox="0 0 1000 600" preserveAspectRatio="none">
+              <path class="line-path" d="M200,450 L300,400 L400,350 L500,300 L600,250" />
+            </svg>
+
+            <!-- Маркеры -->
+            <div class="marker" data-day="1" style="top: 75%; left: 20%">1</div>
+            <div class="marker" data-day="2" style="top: 70%; left: 30%">2</div>
+            <div class="marker" data-day="3" style="top: 65%; left: 40%">3</div>
+            <div class="marker" data-day="4" style="top: 60%; left: 50%">4</div>
+            <div class="marker" data-day="5" style="top: 55%; left: 60%">5</div>
+
+            <!-- Попапы -->
+            <div class="marker-popup" id="popup-1-norway">
+              <h3>Day 1: Bergen</h3>
+              <p>Arrival and motorhome pick-up</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-2-norway">
+              <h3>Day 2: Flåm</h3>
+              <p>Scenic drive and Flåm Railway</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-3-norway">
+              <h3>Day 3: Geiranger</h3>
+              <p>Geirangerfjord cruise</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-4-norway">
+              <h3>Day 4: Trollstigen</h3>
+              <p>Troll's Path drive</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-5-norway">
+              <h3>Day 5: Atlantic Road</h3>
+              <p>Iconic ocean road</p>
+              <small>Click to highlight this day</small>
+            </div>
+          </div>
+
+          <!-- Маркеры для Австрии -->
+          <div class="markers-container" id="austria-markers">
+            <!-- Маршрутная линия -->
+            <svg class="route-line" viewBox="0 0 1000 600" preserveAspectRatio="none">
+              <path class="line-path" d="M300,500 L400,450 L500,400 L600,350 L700,300" />
+            </svg>
+
+            <!-- Маркеры -->
+            <div class="marker" data-day="1" style="top: 80%; left: 30%">1</div>
+            <div class="marker" data-day="2" style="top: 70%; left: 40%">2</div>
+            <div class="marker" data-day="3" style="top: 65%; left: 50%">3</div>
+            <div class="marker" data-day="4" style="top: 55%; left: 60%">4</div>
+            <div class="marker" data-day="5" style="top: 45%; left: 70%">5</div>
+
+            <!-- Попапы -->
+            <div class="marker-popup" id="popup-1-austria">
+              <h3>Day 1: Vienna</h3>
+              <p>Arrival and city exploration</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-2-austria">
+              <h3>Day 2: Salzburg</h3>
+              <p>Mozart's birthplace</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-3-austria">
+              <h3>Day 3: Hallstatt</h3>
+              <p>UNESCO village and lake</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-4-austria">
+              <h3>Day 4: Grossglockner</h3>
+              <p>High Alpine Road drive</p>
+              <small>Click to highlight this day</small>
+            </div>
+            <div class="marker-popup" id="popup-5-austria">
+              <h3>Day 5: Innsbruck</h3>
+              <p>Tyrolean capital and mountains</p>
+              <small>Click to highlight this day</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="routes__wrapper">
+            <!-- Маршрут 1: Норвегия -->
+            <div class="routes__item active" id="route-1">
+              <div class="routes__head">
+                <h1 class="section__title">routes</h1>
+                <ul class="routes-tabs">
+                  <li class="routes-tabs--item">
+                    <button class="routes-tabs--btn active" data-route="norway">Norway</button>
+                  </li>
+                  <li class="routes-tabs--item">
+                    <button class="routes-tabs--btn" data-route="austria">Austria</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="routes__body">
+                <h2 class="routes__title">
+                  The Grand Voyager:<br />
+                  From Fjords to the Arctic
+                </h2>
+                <p class="routes__desc">
+                  This epic route will take you from the heart of the Norwegian fjords to the harsh
+                  beauty of the Arctic Circle, revealing all of Norway's contrasts. Perfect for
+                  those who want to see the most impressive sights in one trip.
+                </p>
+                <ul class="routes-info">
+                  <li class="routes-info--item">
+                    <div class="routes-info--icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12 6V12L16 14"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="routes-info--data">14-16 days</span>
+                  </li>
+                  <li class="routes-info--item">
+                    <div class="routes-info--icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6 22C7.65685 22 9 20.6569 9 19C9 17.3431 7.65685 16 6 16C4.34315 16 3 17.3431 3 19C3 20.6569 4.34315 22 6 22Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M9 19H17.5C18.4283 19 19.3185 18.6313 19.9749 17.9749C20.6313 17.3185 21 16.4283 21 15.5C21 14.5717 20.6313 13.6815 19.9749 13.0251C19.3185 12.3687 18.4283 12 17.5 12H6.5C5.57174 12 4.6815 11.6313 4.02513 10.9749C3.36875 10.3185 3 9.42826 3 8.5C3 7.57174 3.36875 6.6815 4.02513 6.02513C4.6815 5.36875 5.57174 5 6.5 5H15"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="routes-info--data">~2200 - 2500 km</span>
+                  </li>
+                </ul>
+
+                <!-- Слайдер -->
+                <div class="routes__slider-container">
+                  <div class="routes__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <!-- Слайды для Норвегии -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 1:</span>
+                          <h4 class="swiper-slide__title">Arrival in Bergen & Motorhome Pick-up</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Arrive in Bergen, pick up your motorhome. Complete
+                                a thorough briefing and vehicle check. Stock up on groceries and
+                                supplies for the first 3-4 days.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Evening stroll through the historic Bryggen Wharf,
+                                a UNESCO World Heritage site.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Bergen Camping Park or similar certified motorhome
+                                parking.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 2:</span>
+                          <h4 class="swiper-slide__title">Bergen to Flåm</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive from Bergen to Flåm via the scenic roads
+                                along the fjords.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Flåm Railway journey, one of the world's most
+                                beautiful train rides.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Flåm Camping with stunning fjord views.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 3:</span>
+                          <h4 class="swiper-slide__title">Flåm to Geiranger</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive through stunning landscapes to Geiranger,
+                                home to one of Norway's most famous fjords.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Geirangerfjord cruise to see the Seven Sisters and
+                                Bridal Veil waterfalls.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Geiranger Camping.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 4:</span>
+                          <h4 class="swiper-slide__title">Geiranger to Trollstigen</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive the famous Troll's Path (Trollstigen) with
+                                its 11 hairpin turns.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Viewing platforms overlooking the dramatic valley.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Trollstigen Camping.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 5:</span>
+                          <h4 class="swiper-slide__title">Atlantic Ocean Road</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive the iconic Atlantic Ocean Road, connecting
+                                small islands with dramatic bridges.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Photography stops along the winding road with
+                                ocean views.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping along the Atlantic coast.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="swiper-nav">
+                        <div class="swiper-button-prev">‹</div>
+                        <div class="swiper-button-next">›</div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Маршрут 2: Австрия -->
+            <div class="routes__item" id="route-2">
+              <div class="routes__head">
+                <h1 class="section__title">routes</h1>
+                <ul class="routes-tabs">
+                  <li class="routes-tabs--item">
+                    <button class="routes-tabs--btn" data-route="norway">Norway</button>
+                  </li>
+                  <li class="routes-tabs--item">
+                    <button class="routes-tabs--btn active" data-route="austria">Austria</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="routes__body">
+                <h2 class="routes__title">
+                  Alpine Adventure:<br />
+                  Austrian Mountain Odyssey
+                </h2>
+                <p class="routes__desc">
+                  Discover the majestic Austrian Alps on this breathtaking route through snow-capped
+                  peaks, crystal-clear lakes, and charming mountain villages. Experience the best of
+                  Austrian culture and natural beauty.
+                </p>
+                <ul class="routes-info">
+                  <li class="routes-info--item">
+                    <div class="routes-info--icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12 6V12L16 14"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="routes-info--data">10-12 days</span>
+                  </li>
+                  <li class="routes-info--item">
+                    <div class="routes-info--icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6 22C7.65685 22 9 20.6569 9 19C9 17.3431 7.65685 16 6 16C4.34315 16 3 17.3431 3 19C3 20.6569 4.34315 22 6 22Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M9 19H17.5C18.4283 19 19.3185 18.6313 19.9749 17.9749C20.6313 17.3185 21 16.4283 21 15.5C21 14.5717 20.6313 13.6815 19.9749 13.0251C19.3185 12.3687 18.4283 12 17.5 12H6.5C5.57174 12 4.6815 11.6313 4.02513 10.9749C3.36875 10.3185 3 9.42826 3 8.5C3 7.57174 3.36875 6.6815 4.02513 6.02513C4.6815 5.36875 5.57174 5 6.5 5H15"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="routes-info--data">~1200 - 1500 km</span>
+                  </li>
+                </ul>
+
+                <!-- Слайдер для Австрии -->
+                <div class="routes__slider-container">
+                  <div class="routes__slider">
+                    <div class="swiper">
+                      <div class="swiper-nav">
+                        <div class="swiper-button-prev">‹</div>
+                        <div class="swiper-button-next">›</div>
+                      </div>
+
+                      <div class="swiper-wrapper">
+                        <!-- Слайды для Австрии -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 1:</span>
+                          <h4 class="swiper-slide__title">Arrival in Vienna</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Arrive in Vienna, pick up your vehicle. Explore the
+                                historic city center.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Visit Schönbrunn Palace and St. Stephen's
+                                Cathedral.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Vienna Camping or city hotel.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 2:</span>
+                          <h4 class="swiper-slide__title">Vienna to Salzburg</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive from Vienna to Salzburg through the Austrian
+                                countryside.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Explore Mozart's birthplace and the Hohensalzburg
+                                Fortress.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Salzburg Camping.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 3:</span>
+                          <h4 class="swiper-slide__title">Salzburg to Hallstatt</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to the picturesque village of Hallstatt, a
+                                UNESCO World Heritage site.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Boat tour on Hallstätter See and visit to the Salt
+                                Mine.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Hallstatt Camping with lake views.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 4:</span>
+                          <h4 class="swiper-slide__title">Grossglockner High Alpine Road</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive the spectacular Grossglockner High Alpine
+                                Road.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Panoramic views of Austria's highest mountain,
+                                Grossglockner.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Alpine hut or camping in Heiligenblut.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 5:</span>
+                          <h4 class="swiper-slide__title">Innsbruck and Tyrolean Alps</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to Innsbruck, capital of the Tyrol region.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Visit the Golden Roof and take the cable car to
+                                Nordkette.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Innsbruck Camping.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section__title">reviews</h2>
+            <p class="section__desc">happy travelers</p>
+          </div>
+          <div class="reviews__wrapper">
+            <!-- Слайдер -->
+            <div class="reviews__slider">
+              <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                  <!-- Отзыв 1 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Alex Johnson"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          They made our dream road trip incredibly easy and unforgettable. The
+                          motorhome was spotless and fully equipped.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Alex Johnson</h3>
+                        <span class="reviews__bottom--geo">USA, California</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Отзыв 2 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Maria Garcia"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          Perfect for our family vacation. Everything worked flawlessly and the
+                          support team was available 24/7.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Maria Garcia</h3>
+                        <span class="reviews__bottom--geo">Spain, Madrid</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Отзыв 3 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Thomas Müller"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          The Norwegian fjords tour was breathtaking. Excellent vehicle condition
+                          and comprehensive travel guide included.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Thomas Müller</h3>
+                        <span class="reviews__bottom--geo">Germany, Berlin</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Отзыв 4 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Sophie Williams"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          Best travel experience ever! The motorhome had all the amenities we needed
+                          and the pickup process was seamless.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Sophie Williams</h3>
+                        <span class="reviews__bottom--geo">UK, London</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Отзыв 5 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Luca Rossi"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          The Austrian Alps tour was magical. Comfortable vehicle and excellent
+                          route suggestions made our trip perfect.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Luca Rossi</h3>
+                        <span class="reviews__bottom--geo">Italy, Rome</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Отзыв 6 -->
+                  <div class="swiper-slide">
+                    <div class="reviews__item">
+                      <div class="reviews__top">
+                        <img
+                          src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          alt="Emma Chen"
+                          class="reviews__top--avatar" />
+                        <div class="reviews__top--stars">
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                          <svg
+                            class="reviews__top--star"
+                            width="18"
+                            height="17"
+                            viewBox="0 0 18 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
+                              stroke="#A5E600" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reviews__body">
+                        <span class="reviews__body--quota">"</span>
+                        <p class="reviews__body--comment">
+                          As a solo traveler, I felt completely safe. The motorhome was easy to
+                          drive and the campsite recommendations were spot on.
+                        </p>
+                      </div>
+                      <div class="reviews__bottom">
+                        <h3 class="reviews__bottom--name">Emma Chen</h3>
+                        <span class="reviews__bottom--geo">Canada, Vancouver</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Навигация слайдера -->
+              <div class="reviews__nav">
+                <button class="reviews__prev" id="reviewsPrev">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 18L9 12L15 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="reviews__counter">
+                  <span id="currentSlide">1</span> / <span id="totalSlides">6</span>
+                </div>
+                <button class="reviews__next" id="reviewsNext">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Пагинация -->
+              <div class="reviews__pagination" id="reviewsPagination">
+                <!-- Буллеты будут созданы через JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section__wrapper section__wrapper--center">
+            <h2 class="section__title">how to rent</h2>
+            <p class="section__desc">Your Road Trip, in 4 Easy Steps</p>
+          </div>
+          <div class="faq__wrapper" id="faqWrapper">
+            <!-- Вопрос 1 -->
+            <button class="faq__item active">
+              <h3 class="faq__item--question">What's included in the price?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                The rental price includes the motorhome itself, comprehensive insurance, 24/7
+                roadside assistance, basic kitchen equipment, bedding for all passengers, and a full
+                tank of gas. We also provide a detailed travel guide with recommended routes and
+                campsites.
+              </p>
+            </button>
+
+            <!-- Вопрос 2 -->
+            <button class="faq__item">
+              <h3 class="faq__item--question">Where can I pick up the motorhome?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                We have pickup locations in Bergen, Oslo, and Trondheim in Norway, and Vienna and
+                Salzburg in Austria. You can choose the most convenient location during booking. All
+                our pickup points are easily accessible from major airports and train stations.
+              </p>
+            </button>
+
+            <!-- Вопрос 3 -->
+            <button class="faq__item">
+              <h3 class="faq__item--question">What documents do I need?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                You'll need a valid driver's license (Category B for most models), passport or ID
+                card, and a credit card for the security deposit. For drivers under 25, there may be
+                additional requirements. International licenses are accepted for most countries.
+              </p>
+            </button>
+
+            <!-- Вопрос 4 -->
+            <button class="faq__item">
+              <h3 class="faq__item--question">Can I travel between countries?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Yes! Our motorhomes are insured for travel throughout Scandinavia and most European
+                countries. We provide all necessary documentation for border crossings. Just let us
+                know your planned route during booking so we can ensure you have the right
+                paperwork.
+              </p>
+            </button>
+
+            <!-- Вопрос 5 -->
+            <button class="faq__item">
+              <h3 class="faq__item--question">What's the cancellation policy?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                You can cancel free of charge up to 30 days before pickup. Between 30-14 days,
+                there's a 50% cancellation fee. Within 14 days, the cancellation fee is 100%. We
+                recommend purchasing travel insurance to cover unexpected changes.
+              </p>
+            </button>
+
+            <!-- Скрытые вопросы (6-10) -->
+            <button class="faq__item hidden">
+              <h3 class="faq__item--question">Is there a mileage limit?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Our standard rental includes 200km per day. Additional kilometers can be purchased
+                at a reasonable rate. For longer trips, we offer unlimited mileage packages at
+                discounted rates when booked in advance.
+              </p>
+            </button>
+
+            <button class="faq__item hidden">
+              <h3 class="faq__item--question">Are pets allowed?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Yes, we are pet-friendly! We charge a small cleaning fee of €50 per pet. Please
+                inform us during booking so we can prepare the motorhome with pet-friendly
+                accessories like bowls and a comfortable pet bed.
+              </p>
+            </button>
+
+            <button class="faq__item hidden">
+              <h3 class="faq__item--question">What about winter rentals?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Our motorhomes are equipped for winter travel with insulated water tanks, winter
+                tires, and heating systems. Winter rentals include additional equipment like snow
+                chains and ice scrapers. Special winter rates apply.
+              </p>
+            </button>
+
+            <button class="faq__item hidden">
+              <h3 class="faq__item--question">How does the insurance work?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Comprehensive insurance is included with zero deductible for most damages. The
+                security deposit (€1000-€2000) is fully refundable upon return if no damages are
+                found. Additional coverage options are available for peace of mind.
+              </p>
+            </button>
+
+            <button class="faq__item hidden">
+              <h3 class="faq__item--question">Can I extend my rental?</h3>
+              <div class="faq__item--btn"></div>
+              <p class="faq__item--answer">
+                Extensions are possible subject to availability. Contact us at least 48 hours before
+                your scheduled return. Extended days are charged at the standard daily rate.
+                Last-minute extensions may incur additional fees.
+              </p>
+            </button>
+          </div>
+          <button class="faq__more" id="faqMore">View more</button>
+        </div>
+      </section>
+      <section class="section contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <div class="section__wrapper">
+                <h2 class="section__title">feedback</h2>
+                <p class="section__desc">Start you perfect trip</p>
+                <form class="contacts__form" action=""></form>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <img class="contacts__item--img" src="images/contacts.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer section"></footer>
+    <footer class="footer section">
+      <video src="" class="footer--video"></video>
+      <div class="footer__wrapper">
+        <div class="footer__top">
+          <span class="footer__top--text">Work with us</span>
+          <a href="mailto:info@goee.ee" class="footer__top--link">info@goee.ee</a>
+        </div>
+        <div class="footer__bottom">
+          <img src="images/GOEE.svg" alt="" />
+          <div class="footer__inner">
+            <div class="footer__menu">
+              <nav class="footer__menu--sections">
+                <ul class="footer__menu--list">
+                  <li class="footer__menu--item">
+                    <span class="footer__menu--title">Navigation</span>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Main</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">About</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Motorhome</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Reviews</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">FAQ</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Rental</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__menu--sicials">
+                <ul class="footer__menu--list">
+                  <li class="footer__menu--item">
+                    <span class="footer__menu--title">Socials</span>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Instagram</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Facebook</a>
+                  </li>
+                  <li class="footer__menu--item">
+                    <a href="" class="footer__menu--link">Telegram</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__end">
+              <span class="footer__end--copy">© Copyright Goee 2025</span>
+              <a href="#hero" class="footer__end--top">Back to top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
