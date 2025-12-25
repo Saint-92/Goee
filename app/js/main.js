@@ -4,19 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Плавная прокрутка для якорей
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            // Создаем отступ сверху (например, 100px)
-            const offsetTop = target.offsetTop - 100;
-            
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-});
+  });
 
   // Изменение хедера при скролле
   const header = document.getElementById('header');
