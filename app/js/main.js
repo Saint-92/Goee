@@ -582,77 +582,85 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ========== ОТЗЫВЫ ==========
-  function initReviews() {
-    const reviewsSlider = document.querySelector('.reviews-slider');
-    if (!reviewsSlider) return;
+// ========== ОТЗЫВЫ ==========
+function initReviews() {
+  const reviewsSlider = document.querySelector('.reviews-slider');
+  if (!reviewsSlider) return;
+  
+  const swiper = new Swiper(reviewsSlider, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: false,
+    navigation: {
+      nextEl: '#reviewsNext',
+      prevEl: '#reviewsPrev',
+    },
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 10 },
+      992: { slidesPerView: 3, spaceBetween: 10 },
+    },
+  });
+  
+  // Получаем текущее количество видимых слайдов
+  function getSlidesPerView() {
+    if (window.innerWidth < 768) return 1;
+    if (window.innerWidth < 992) return 2;
+    return 3;
+  }
+  
+  // Обновляем счетчик и пагинацию
+  function updateAll() {
+    const slidesPerView = getSlidesPerView();
+    const current = swiper.realIndex + 1;
+    const total = Math.max(swiper.slides.length - slidesPerView + 1, 1);
     
-    const swiper = new Swiper(reviewsSlider, {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: false,
-      navigation: {
-        nextEl: '#reviewsNext',
-        prevEl: '#reviewsPrev',
-      },
-      breakpoints: {
-        768: { slidesPerView: 2, spaceBetween: 20 },
-        992: { slidesPerView: 3, spaceBetween: 20 },
-      },
-    });
+    // Обновляем цифровой счетчик
+    const currentSlideEl = document.getElementById('currentSlide');
+    const totalSlidesEl = document.getElementById('totalSlides');
+    if (currentSlideEl) currentSlideEl.textContent = current;
+    if (totalSlidesEl) totalSlidesEl.textContent = total;
     
-    function updateCounter() {
-      const current = swiper.realIndex + 1;
-      const total = swiper.slides.length;
-      
-      const currentSlideEl = document.getElementById('currentSlide');
-      const totalSlidesEl = document.getElementById('totalSlides');
-      
-      if (currentSlideEl) currentSlideEl.textContent = current;
-      if (totalSlidesEl) totalSlidesEl.textContent = total;
-    }
-    
-    function createPagination() {
-      const paginationContainer = document.getElementById('reviewsPagination');
-      if (!paginationContainer) return;
-      
-      const totalSlides = swiper.slides.length;
+    // Обновляем буллеты
+    const paginationContainer = document.getElementById('reviewsPagination');
+    if (paginationContainer) {
       paginationContainer.innerHTML = '';
       
-      for (let i = 0; i < totalSlides; i++) {
+      for (let i = 0; i < total; i++) {
         const bullet = document.createElement('div');
-        bullet.className = 'reviews__pagination--bullet' + (i === 0 ? ' active' : '');
-        bullet.setAttribute('data-index', i);
+        bullet.className = `reviews__pagination--bullet${i === swiper.realIndex ? ' active' : ''}`;
+        bullet.dataset.index = i;
         bullet.setAttribute('aria-label', `Go to review ${i + 1}`);
-        
         bullet.addEventListener('click', () => swiper.slideTo(i));
         paginationContainer.appendChild(bullet);
       }
     }
-    
-    function updatePagination() {
-      const bullets = document.querySelectorAll('.reviews__pagination--bullet');
-      const activeIndex = swiper.realIndex;
-      
-      bullets.forEach((bullet, index) => {
-        if (index === activeIndex) {
-          bullet.classList.add('active');
-        } else {
-          bullet.classList.remove('active');
-        }
-      });
-    }
-    
-    updateCounter();
-    createPagination();
-    
-    swiper.on('slideChange', function() {
-      updateCounter();
-      updatePagination();
-    });
-    
-    window.addEventListener('resize', updateCounter);
   }
+  
+  // Оптимизация ресайза
+  let resizeTimeout;
+  function handleResize() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateAll, 150);
+  }
+  
+  // Инициализация
+  updateAll();
+  
+  // Обработчики событий
+  swiper.on('slideChange', () => {
+
+    const bullets = document.querySelectorAll('.reviews__pagination--bullet');
+    const currentSlideEl = document.getElementById('currentSlide');
+    
+    if (currentSlideEl) currentSlideEl.textContent = swiper.realIndex + 1;
+    
+    bullets.forEach((bullet, index) => {
+      bullet.classList.toggle('active', index === swiper.realIndex);
+    });
+  });
+  
+  window.addEventListener('resize', handleResize);
+}
 
   // ========== FAQ ==========
   function initFAQ() {

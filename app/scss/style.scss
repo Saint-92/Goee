@@ -1186,7 +1186,6 @@ body {
     position: relative;
     
     &-slide {
-        padding: 10px 5px;
         @include flex-column;
         height: auto;
         
@@ -1461,8 +1460,8 @@ body {
         }
         
         &--avatar {
-            width: 92px;
-            height: 92px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--white-color);
@@ -1501,8 +1500,7 @@ body {
         &--quota {
             font-size: 86px;
             font-family: 'Bebas Neue', sans-serif;
-            line-height: 1;
-            color: var(--second-color);
+            color: var(--dark-color);
             opacity: 0.5;
             
             @include responsive(desktop-lg) {
@@ -1815,19 +1813,22 @@ body {
 // Contacs
 .contacts{
     &__wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;;
         background-color: var(--grey-color);
         padding: 20px;
         border-radius: 50px;
-        max-height: 100vh;
+        height: calc(100vh - 120px);
+        min-height: 650px;
     }
     &__item{
-        height: 100%;
+        position: relative;
         & .section{
             &__wrapper{
                 @include flex-center;
+            }
+            &__title{
+                border: 1px solid var(--dark-color);
             }
             &__desc{
                 text-align: center;
@@ -1838,6 +1839,7 @@ body {
             height: 100%;
             width: 100%;
             object-fit: cover;
+            position: absolute;
         }
         & .section__wrapper{
             width: 100%;
@@ -1907,6 +1909,7 @@ body {
 .footer{
     width: 100%;
     height: 100vh;
+    min-height: 650px;
     position: relative;
     &--video{
         position: absolute;
@@ -1922,13 +1925,34 @@ body {
     &__wrapper{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 150px 0 50px 0;
+        justify-content: space-between;
+        padding: 100px 0 50px 0;
         height: 100vh;
     }
     &__top{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid hsl(0deg 0% 100% / 20%);
+        padding-bottom: 5px;
+        &--text{
+            font-size: 64px;
+            line-height: 80%;
+            letter-spacing: -0.03rem;
+            font-family: "Bebas Neue", sans-serif;
+            color: var(--white-color);
+        }
+        &--link{
+            font-size: 64px;
+            line-height: 80%;
+            letter-spacing: -0.03rem;
+            font-family: "Bebas Neue", sans-serif;
+            color: var(--white-color);
+            @include transition;
+            &:hover{
+                color: var(--second-color);
+                @include transition;
+            }
+        }
     }
     &__bottom{
         display: flex;
@@ -1944,7 +1968,7 @@ body {
     }
     &__menu{
         display: flex;
-        gap: 120px;
+        justify-content: space-between;
         &--list{
             display: flex;
             flex-direction: column;
@@ -1969,6 +1993,25 @@ body {
         display: flex;
         justify-content: space-between;
         color: #7e7e7e;
+        gap: 80px;
+        letter-spacing: -0.03rem;
+        font-family: "Bebas Neue", sans-serif;
+
+        &--top{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            letter-spacing: -0.03rem;
+            font-family: "Bebas Neue", sans-serif;
+            @include transition;
+            &:hover{
+                color: var(--second-color);
+                @include transition;
+            }
+            & svg{
+                padding-bottom: 3px;
+            }
+        }
     }
 }
 // Лайтбокс
