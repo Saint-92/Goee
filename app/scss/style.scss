@@ -78,6 +78,8 @@ body {
     padding: 40px 0;
     
     &__wrapper {
+        @include flex-column;
+        gap: 20px;
         &--center {
             @include flex-column;
             align-items: center;
@@ -501,7 +503,7 @@ body {
     }
 }
 
-// Мотохаусы
+// Мотодома
 .motorhomes {
     &__wrapper {
         @include flex-column;
@@ -512,7 +514,7 @@ body {
         border: 1px solid var(--grey-color);
         border-radius: 20px;
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
         background-color: var(--white-color);
         overflow: hidden;
         
@@ -673,7 +675,6 @@ body {
     
     &-tabs {
         padding: 40px 40px 0 40px;
-        border-bottom: 1px solid var(--grey-color);
         
         @include responsive(tablet) {
             padding: 25px;
@@ -752,7 +753,7 @@ body {
             
             td {
                 font-weight: 600;
-                padding: 12px 15px;
+                padding: 8px 15px;
             }
         }
         
@@ -765,7 +766,7 @@ body {
                 }
                 
                 td {
-                    padding: 12px 15px;
+                    padding: 8px 15px;
                 }
             }
         }
@@ -774,13 +775,27 @@ body {
     &-form {
         background-color: var(--primary-color);
         color: var(--white-color);
-        padding: 30px 40px;
-        margin-top: auto;
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         
         @include responsive(tablet) {
             padding: 25px;
         }
         
+        & table{
+            td:nth-child(2){
+                text-align: right;
+                font-size:32px;
+                & .old-coast{
+                    font-size: 18px;
+                    margin-right: 10px;
+                    opacity: .5;
+                    text-decoration: line-through;
+                }
+            }
+        }
         &--pick {
             @include flex-center;
             justify-content: space-between;
@@ -811,7 +826,7 @@ body {
             font-size: 14px;
         }
         
-        &-buttons {
+        & .motorhomes-buttons {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
@@ -821,34 +836,34 @@ body {
             @include responsive(tablet) {
                 grid-template-columns: 1fr;
             }
-            
-            &--btn {
-                width: 100%;
-                padding: 16px;
-                border-radius: 40px;
-                border: none;
-                cursor: pointer;
-                @include transition;
-                font-family: 'Bebas Neue', sans-serif;
-                
-                &:first-child {
-                    background: transparent;
-                    border: 2px solid var(--white-color);
-                    color: var(--white-color);
+            &--item{
+                &:first-child .motorhomes-buttons--btn{
+                    background-color: transparent;
+                    color: var(--second-color);
+                    border: 1px solid var(--second-color);
                     
                     &:hover {
                         background: rgba(255, 255, 255, 0.1);
                     }
                 }
                 
-                &:last-child {
+                &:last-child .motorhomes-buttons--btn{
                     background-color: var(--second-color);
+                    border: 1px solid var(--second-color);
                     color: var(--primary-color);
                     
                     &:hover {
                         background-color: #94cc00;
                     }
                 }
+            }
+            &--btn {
+                width: 100%;
+                padding: 16px;
+                border: none;
+                cursor: pointer;
+                @include transition;
+                font-family: 'Bebas Neue', sans-serif;
             }
         }
         
@@ -869,11 +884,11 @@ body {
             }
             
             &::before {
-                content: '';
+                content: "";
                 width: 18px;
                 height: 18px;
-                border: 2px solid var(--white-color);
-                border-radius: 4px;
+                border-radius: 50%;
+                border: 4px solid var(--white-color);
                 margin-right: 10px;
                 cursor: pointer;
             }
@@ -884,7 +899,7 @@ body {
             
             &:checked + label::before {
                 background-color: var(--second-color);
-                border-color: var(--second-color);
+                border-color: var(--white-color);
             }
         }
     }
@@ -1000,6 +1015,12 @@ body {
         z-index: 10;
         position: relative;
         padding-top: 20px;
+        
+        & .section__title{
+            position: absolute;
+            left: 0;
+            border: 1px solid var(--dark-color);
+        }
         
         @include responsive(tablet) {
             flex-direction: column;
@@ -1429,7 +1450,7 @@ body {
     
     &__top {
         display: flex;
-        align-items: center;
+        align-items:center;
         justify-content: space-between;
         margin-bottom: 30px;
         
@@ -1440,11 +1461,11 @@ body {
         }
         
         &--avatar {
-            width: 72px;
-            height: 72px;
+            width: 92px;
+            height: 92px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--white-color);
+            border: 2px solid var(--white-color);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             
             @include responsive(desktop-md) {
@@ -1646,10 +1667,6 @@ body {
                 background-color: var(--second-color);
                 transform: rotate(45deg);
                 
-                &::after {
-                    content: '-';
-                    font-size: 40px;
-                }
             }
             
             .faq__item--answer {
@@ -1742,11 +1759,11 @@ body {
             opacity: 0;
             overflow: hidden;
             transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
-            grid-column: 1 / -1;
             margin: 0 20px;
             padding-right: 120px;
             line-height: 1.6;
             color: #555;
+            font-weight: 500;
         }
         
         &--btn {
@@ -1795,6 +1812,91 @@ body {
         @include responsive(phone) {
             width: 100%;
             padding: 14px 20px;
+        }
+    }
+}
+// Contacs
+.contacts{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--grey-color);
+        padding: 20px;
+        border-radius: 50px;
+    }
+    &__item{
+        & .section{
+            &__wrapper{
+                @include flex-center;
+            }
+            &__desc{
+                text-align: center;
+            }
+        }
+        &--img{
+            border-radius: 35px;
+        }
+        & .section__wrapper{
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+    &__item:nth-child(1){
+        flex: 1 1 0;
+        padding-right: 20px;
+        @include flex-center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--input{
+            background-color: var(--white-color);
+            width: 100%;
+            padding: 15px 30px;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        &--btn{
+            width: 100%;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+            font-family: "Bebas Neue", sans-serif;
+            background-color: var(--second-color);
+            border-radius: 40px;
+            &:hover{
+                background-color: var(--dark-color);
+                color: var(--white-color);
+                transition: all .3s ease;
+            }
+        }
+        .radio {
+            display: none;
+            
+            &:checked + label::before {
+                background-color: var(--second-color);
+                border-color: var(--dark-color);
+            }
+        }
+        
+        & label{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 15px;
+            &::before{
+                content: "";
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 4px solid var(--dark-color);
+                margin-right: 10px;
+                cursor: pointer;
+            }
         }
     }
 }
