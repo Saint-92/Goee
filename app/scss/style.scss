@@ -775,7 +775,7 @@ body {
     &-form {
         background-color: var(--primary-color);
         color: var(--white-color);
-        padding: 40px 40px;
+        padding: 40px 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -823,7 +823,7 @@ body {
         
         &-period {
             margin-left: 10px;
-            font-size: 14px;
+            font-size: 12px;
         }
         
         & .motorhomes-buttons {
@@ -1821,8 +1821,10 @@ body {
         background-color: var(--grey-color);
         padding: 20px;
         border-radius: 50px;
+        max-height: 100vh;
     }
     &__item{
+        height: 100%;
         & .section{
             &__wrapper{
                 @include flex-center;
@@ -1833,6 +1835,9 @@ body {
         }
         &--img{
             border-radius: 35px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         & .section__wrapper{
             width: 100%;
@@ -1885,6 +1890,8 @@ body {
             align-items: center;
             font-size: 14px;
             margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
             &::before{
                 content: "";
                 width: 18px;
