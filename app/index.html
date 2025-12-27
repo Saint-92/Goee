@@ -7,12 +7,12 @@
     <title>GOEE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- В head -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Подключение Flatpickr для календаря -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
@@ -168,7 +168,7 @@
             <p class="section__desc">Your Home, Wherever the Road Takes You</p>
           </div>
           <div class="motorhomes__wrapper">
-            <div class="motorhomes__item">
+            <div class="motorhomes__item" id="motorhome-adria-s75-sl-2023">
               <div class="motorhomes__left">
                 <div class="motorhomes__header">
                   <div class="motorhomes__header--item">
@@ -177,73 +177,76 @@
                   </div>
                   <div class="motorhomes__header--item">
                     <ul class="motorhomes__rating">
-                      <li class="motorhomes__rating--item">
+                      <li>
                         <svg
                           class="motorhomes__rating--star"
-                          width="18"
-                          height="17"
-                          viewBox="0 0 18 17"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
-                            stroke="#A5E600" />
+                            d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+                            fill="#A5E600" />
                         </svg>
                       </li>
-                      <li class="motorhomes__rating--item">
+                      <li>
                         <svg
                           class="motorhomes__rating--star"
-                          width="18"
-                          height="17"
-                          viewBox="0 0 18 17"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
-                            stroke="#A5E600" />
+                            d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+                            fill="#A5E600" />
                         </svg>
                       </li>
-                      <li class="motorhomes__rating--item">
+                      <li>
                         <svg
                           class="motorhomes__rating--star"
-                          width="18"
-                          height="17"
-                          viewBox="0 0 18 17"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
-                            stroke="#A5E600" />
+                            d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+                            fill="#A5E600" />
                         </svg>
                       </li>
-                      <li class="motorhomes__rating--item">
+                      <li>
                         <svg
                           class="motorhomes__rating--star"
-                          width="18"
-                          height="17"
-                          viewBox="0 0 18 17"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
-                            stroke="#A5E600" />
+                            d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+                            fill="#A5E600" />
                         </svg>
                       </li>
-                      <li class="motorhomes__rating--item">
+                      <li>
                         <svg
                           class="motorhomes__rating--star"
-                          width="18"
-                          height="17"
-                          viewBox="0 0 18 17"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
-                            d="M10.1045 6.37305L10.2168 6.71875H15.5811L11.5352 9.6582L11.2412 9.87109L11.3535 10.2168L12.8984 14.9717L8.85352 12.0332L8.55957 11.8193L8.26562 12.0332L4.21973 14.9717L5.76562 10.2168L5.87793 9.87109L5.58398 9.6582L1.53809 6.71875H6.90234L7.01465 6.37305L8.55957 1.61719L10.1045 6.37305Z"
-                            stroke="#A5E600" />
+                            d="M10 0L13.09 6.26L20 7.27L15 12.14L16.18 19.02L10 15.77L3.82 19.02L5 12.14L0 7.27L6.91 6.26L10 0Z"
+                            fill="#A5E600" />
                         </svg>
                       </li>
                     </ul>
-                    <button class="motorhomes__share">
+                    <button
+                      class="motorhomes__share"
+                      id="shareButton"
+                      data-motorhome-id="adria-s75-sl-2023">
                       <svg
                         class="motorhomes__share--icon"
                         width="24"
@@ -261,10 +264,30 @@
                     </button>
                   </div>
                 </div>
+
+                <!-- Swiper слайдер -->
                 <div class="motorhomes__slider">
-                  <div class="motorhomes__slider--wrapper">
+                  <div class="swiper motorhomes-swiper">
+                    <div class="swiper-wrapper">
+                      <!-- Слайды будут добавлены через JavaScript -->
+                    </div>
+
                     <!-- Кнопка лупы для лайтбокса -->
                     <button class="lightbox-toggle" id="lightboxToggle">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+
+                    <!-- Пагинация Swiper внутри контейнера слайдера -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <!-- Навигация слайдера по аналогии с reviews -->
+                  <div class="motorhomes__nav">
+                    <button class="motorhomes__prev" id="motorhomesPrev">
                       <svg
                         width="24"
                         height="24"
@@ -272,24 +295,28 @@
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
-                          d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
-                          fill="#2E2F36" />
+                          d="M15 18L9 12L15 6"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
                     </button>
-
-                    <!-- Главное изображение -->
-                    <img
-                      src="https://images.unsplash.com/photo-1562183242-b8361c156b41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                      alt="Adria S75 SL 2023"
-                      class="motorhomes__slider--main"
-                      id="mainImage" />
-
-                    <!-- Карусель миниатюр -->
-                    <nav class="motorhomes__nav">
-                      <ul class="motorhomes__nav--list" id="thumbnailList">
-                        <!-- Миниатюры будут добавлены через JavaScript -->
-                      </ul>
-                    </nav>
+                    <button class="motorhomes__next" id="motorhomesNext">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 18L15 12L9 6"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -327,21 +354,30 @@
                     </p>
                     <div class="motorhomes-icons">
                       <div class="motorhomes-icons--item">
-                        <img src="images/icon-sleeps.png" alt="" class="motorhomes-icons--img" />
+                        <img
+                          src="https://via.placeholder.com/40x40.png?text=Sleeps"
+                          alt="Sleeps"
+                          class="motorhomes-icons--img" />
                         <span class="motorhomes-icons--desc">4 sleeps</span>
                       </div>
                       <div class="motorhomes-icons--item">
-                        <img src="images/icon-seats.png" alt="" class="motorhomes-icons--img" />
+                        <img
+                          src="https://via.placeholder.com/40x40.png?text=Seats"
+                          alt="Seats"
+                          class="motorhomes-icons--img" />
                         <span class="motorhomes-icons--desc">5 seats</span>
                       </div>
                       <div class="motorhomes-icons--item">
-                        <img src="images/icon-fuel.png" alt="" class="motorhomes-icons--img" />
+                        <img
+                          src="https://via.placeholder.com/40x40.png?text=Fuel"
+                          alt="Fuel"
+                          class="motorhomes-icons--img" />
                         <span class="motorhomes-icons--desc">Diesel</span>
                       </div>
                       <div class="motorhomes-icons--item">
                         <img
-                          src="images/icon-transmission.png"
-                          alt=""
+                          src="https://via.placeholder.com/40x40.png?text=Transmission"
+                          alt="Transmission"
                           class="motorhomes-icons--img" />
                         <span class="motorhomes-icons--desc">Manual / Auto</span>
                       </div>
@@ -446,46 +482,25 @@
                       <span class="period-desc">Per day:</span>
                       <div class="price">
                         <span class="price-old">€169</span>
-                        <span class="price-new">€149</span>
+                        <span class="price-new" id="dailyPrice">€149</span>
                       </div>
                     </div>
                     <div class="motorhomes-form--item">
                       <span class="period-desc">Total price:</span>
                       <div class="price">
-                        <span class="price-old">€2100</span>
-                        <span class="price-new">€1880</span>
+                        <span class="price-old" id="oldTotalPrice">€2100</span>
+                        <span class="price-new" id="totalPrice">€1880</span>
                       </div>
                     </div>
                   </div>
 
                   <div class="motorhomes-form--bottom">
                     <button class="motorhomes-form--btn" id="openCalendar">
-                      <svg
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M0.75 10.25C0.75 6.479 0.75 4.593 1.922 3.422C3.094 2.251 4.979 2.25 8.75 2.25H12.75C16.521 2.25 18.407 2.25 19.578 3.422C20.749 4.594 20.75 6.479 20.75 10.25V12.25C20.75 16.021 20.75 17.907 19.578 19.078C18.406 20.249 16.521 20.25 12.75 20.25H8.75C4.979 20.25 3.093 20.25 1.922 19.078C0.751 17.906 0.75 16.021 0.75 12.25V10.25Z"
-                          stroke="white"
-                          stroke-width="1.5" />
-                        <path
-                          opacity="0.5"
-                          d="M5.75 2.25V0.75M15.75 2.25V0.75M1.25 7.25H20.25"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round" />
-                        <path
-                          d="M16.75 15.25C16.75 15.5152 16.6446 15.7696 16.4571 15.9571C16.2696 16.1446 16.0152 16.25 15.75 16.25C15.4848 16.25 15.2304 16.1446 15.0429 15.9571C14.8554 15.7696 14.75 15.5152 14.75 15.25C14.75 14.9848 14.8554 14.7304 15.0429 14.5429C15.2304 14.3554 15.4848 14.25 15.75 14.25C16.0152 14.25 16.2696 14.3554 16.4571 14.5429C16.6446 14.7304 16.75 14.9848 16.75 15.25ZM16.75 11.25C16.75 11.5152 16.6446 11.7696 16.4571 11.9571C16.2696 12.1446 16.0152 12.25 15.75 12.25C15.4848 12.25 15.2304 12.1446 15.0429 11.9571C14.8554 11.7696 14.75 11.5152 14.75 11.25C14.75 10.9848 14.8554 10.7304 15.0429 10.5429C15.2304 10.3554 15.4848 10.25 15.75 10.25C16.0152 10.25 16.2696 10.3554 16.4571 10.5429C16.6446 10.7304 16.75 10.9848 16.75 11.25ZM11.75 15.25C11.75 15.5152 11.6446 15.7696 11.4571 15.9571C11.2696 16.1446 11.0152 16.25 10.75 16.25C10.4848 16.25 10.2304 16.1446 10.0429 15.9571C9.85536 15.7696 9.75 15.5152 9.75 15.25C9.75 14.9848 9.85536 14.7304 10.0429 14.5429C10.2304 14.3554 10.4848 14.25 10.75 14.25C11.0152 14.25 11.2696 14.3554 11.4571 14.5429C11.6446 14.7304 11.75 14.9848 11.75 15.25ZM11.75 11.25C11.75 11.5152 11.6446 11.7696 11.4571 11.9571C11.2696 12.1446 11.0152 12.25 10.75 12.25C10.4848 12.25 10.2304 12.1446 10.0429 11.9571C9.85536 11.7696 9.75 11.5152 9.75 11.25C9.75 10.9848 9.85536 10.7304 10.0429 10.5429C10.2304 10.3554 10.4848 10.25 10.75 10.25C11.0152 10.25 11.2696 10.3554 11.4571 10.5429C11.6446 10.7304 11.75 10.9848 11.75 11.25ZM6.75 15.25C6.75 15.5152 6.64464 15.7696 6.45711 15.9571C6.26957 16.1446 6.01522 16.25 5.75 16.25C5.48478 16.25 5.23043 16.1446 5.04289 15.9571C4.85536 15.7696 4.75 15.5152 4.75 15.25C4.75 14.9848 4.85536 14.7304 5.04289 14.5429C5.23043 14.3554 5.48478 14.25 5.75 14.25C6.01522 14.25 6.26957 14.3554 6.45711 14.5429C6.64464 14.7304 6.75 14.9848 6.75 15.25ZM6.75 11.25C6.75 11.5152 6.64464 11.7696 6.45711 11.9571C6.26957 12.1446 6.01522 12.25 5.75 12.25C5.48478 12.25 5.23043 12.1446 5.04289 11.9571C4.85536 11.7696 4.75 11.5152 4.75 11.25C4.75 10.9848 4.85536 10.7304 5.04289 10.5429C5.23043 10.3554 5.48478 10.25 5.75 10.25C6.01522 10.25 6.26957 10.3554 6.45711 10.5429C6.64464 10.7304 6.75 10.9848 6.75 11.25Z"
-                          fill="white" />
-                      </svg>
                       <span class="motorhomes-form-period" id="selectedPeriod"
                         >29 NOV - 13 DEC 2025 (14 DAYS)</span
                       >
                     </button>
-
-                    <button class="motorhomes-form--btn">book now</button>
+                    <button class="motorhomes-form--btn" id="bookNowButton">book now</button>
                   </div>
                 </div>
               </div>
@@ -493,18 +508,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Лайтбокс -->
-      <div class="lightbox" id="lightbox">
-        <div class="lightbox__container">
-          <button class="lightbox__close" id="lightboxClose">&times;</button>
-          <img src="" alt="" class="lightbox__image" id="lightboxImage" />
-          <div class="lightbox__nav">
-            <button class="lightbox__prev" id="lightboxPrev">‹</button>
-            <button class="lightbox__next" id="lightboxNext">›</button>
-          </div>
-        </div>
-      </div>
 
       <!-- Модальное окно календаря -->
       <div class="calendar-modal" id="calendarModal">
@@ -516,6 +519,57 @@
             <button class="calendar-btn cancel" id="cancelDates">Cancel</button>
             <button class="calendar-btn apply" id="applyDates">Apply Dates</button>
           </div>
+        </div>
+      </div>
+
+      <!-- Попап для Book Now -->
+      <div class="booking-modal" id="bookingModal">
+        <div class="booking-content">
+          <button class="booking-close" id="bookingClose">&times;</button>
+          <div class="booking-title">
+            <h3>Book Adria S75 SL 2023</h3>
+            <p>Complete the form below to confirm your booking</p>
+          </div>
+
+          <div class="booking-info">
+            <div class="booking-period">
+              <span class="booking-label">Period:</span>
+              <span class="booking-value" id="bookingPeriod">29 NOV - 13 DEC 2025 (14 DAYS)</span>
+            </div>
+            <div class="booking-price">
+              <span class="booking-label">Total Price:</span>
+              <span class="booking-value price" id="bookingPrice">€1880</span>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="form-group">
+              <label for="bookingName">Full Name</label>
+              <input type="text" id="bookingName" required placeholder="Enter your full name" />
+            </div>
+            <div class="form-group">
+              <label for="bookingEmail">Email</label>
+              <input type="email" id="bookingEmail" required placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+              <label for="bookingPhone">Phone Number</label>
+              <input type="tel" id="bookingPhone" required placeholder="Enter your phone number" />
+            </div>
+            <div class="form-group">
+              <label for="bookingNotes">Additional Notes (optional)</label>
+              <textarea
+                id="bookingNotes"
+                rows="3"
+                placeholder="Any special requests or notes"></textarea>
+            </div>
+
+            <div class="booking-terms">
+              <input type="checkbox" id="agreeTerms" required />
+              <label for="agreeTerms">I agree to the rental terms and privacy policy</label>
+            </div>
+
+            <button type="submit" class="booking-submit">Confirm Booking</button>
+          </form>
         </div>
       </div>
 
@@ -2311,6 +2365,12 @@
         </div>
       </div>
     </footer>
+    <!-- Скрытый input для fallback копирования -->
+    <input type="text" id="hiddenCopyInput" value="" />
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
