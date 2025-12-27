@@ -648,7 +648,7 @@ function initReviews() {
   
   // Обработчики событий
   swiper.on('slideChange', () => {
-
+    // Только обновляем активный буллет и счетчик (без пересоздания всей пагинации)
     const bullets = document.querySelectorAll('.reviews__pagination--bullet');
     const currentSlideEl = document.getElementById('currentSlide');
     

@@ -607,90 +607,134 @@
       <section class="section routes" id="routes">
         <!-- Карта как изображение -->
         <div class="routes__map-container">
-          <img src="images/map.png" alt="Norway Map" class="map-image active" id="norway-map" />
-          <img src="images/map.png" alt="Austria Map" class="map-image" id="austria-map" />
+          <img
+            src="images/Norway-map.png"
+            alt="Norway Map"
+            class="map-image active"
+            id="norway-map" />
+          <img src="images/Austria-map.png" alt="Austria Map" class="map-image" id="austria-map" />
 
           <!-- Маркеры для Норвегии -->
           <div class="markers-container active" id="norway-markers">
-            <!-- Маршрутная линия -->
-            <svg class="route-line active" viewBox="0 0 1000 600" preserveAspectRatio="none">
-              <path class="line-path" d="M200,450 L300,400 L400,350 L500,300 L600,250" />
-            </svg>
-
             <!-- Маркеры -->
-            <div class="marker" data-day="1" style="top: 75%; left: 20%">1</div>
-            <div class="marker" data-day="2" style="top: 70%; left: 30%">2</div>
-            <div class="marker" data-day="3" style="top: 65%; left: 40%">3</div>
-            <div class="marker" data-day="4" style="top: 60%; left: 50%">4</div>
-            <div class="marker" data-day="5" style="top: 55%; left: 60%">5</div>
+            <div class="marker" data-day="1" style="top: 72%; left: 35%"></div>
+            <div class="marker" data-day="2" style="top: 68%; left: 37%"></div>
+            <div class="marker" data-day="3" style="top: 74%; left: 39%"></div>
+            <div class="marker" data-day="4" style="top: 69%; left: 39.5%"></div>
+            <div class="marker" data-day="5" style="top: 64%; left: 40%"></div>
+            <div class="marker" data-day="6" style="top: 60%; left: 39%"></div>
+            <div class="marker" data-day="7" style="top: 56%; left: 39.5%"></div>
+            <div class="marker" data-day="8" style="top: 60%; left: 43%"></div>
+            <div class="marker" data-day="9" style="top: 35%; left: 63%"></div>
+            <div class="marker" data-day="10" style="top: 30%; left: 70.5%"></div>
+            <div class="marker" data-day="11" style="top: 26%; left: 82%"></div>
 
-            <!-- Попапы -->
+            <!-- Попапы с реальной информацией -->
             <div class="marker-popup" id="popup-1-norway">
-              <h3>Day 1: Bergen</h3>
-              <p>Arrival and motorhome pick-up</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 1-2: Bergen</h3>
+              <p>Arrival, Bergen exploration, Bryggen Wharf</p>
             </div>
             <div class="marker-popup" id="popup-2-norway">
-              <h3>Day 2: Flåm</h3>
-              <p>Scenic drive and Flåm Railway</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 3: Flåm & Naerøyfjord</h3>
+              <p>Flåm Railway, scenic drive, fjord cruise</p>
             </div>
             <div class="marker-popup" id="popup-3-norway">
-              <h3>Day 3: Geiranger</h3>
-              <p>Geirangerfjord cruise</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 4: Geiranger</h3>
+              <p>Geirangerfjord UNESCO site, waterfalls</p>
             </div>
             <div class="marker-popup" id="popup-4-norway">
-              <h3>Day 4: Trollstigen</h3>
-              <p>Troll's Path drive</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 5: Trollstigen & Romsdal Alps</h3>
+              <p>Troll's Path, viewing platforms</p>
             </div>
             <div class="marker-popup" id="popup-5-norway">
-              <h3>Day 5: Atlantic Road</h3>
-              <p>Iconic ocean road</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 6: Atlantic Ocean Road</h3>
+              <p>Iconic bridges, coastal photography</p>
+            </div>
+            <div class="marker-popup" id="popup-6-norway">
+              <h3>Day 7: Trondheim</h3>
+              <p>Nidaros Cathedral, historic city center</p>
+            </div>
+            <div class="marker-popup" id="popup-7-norway">
+              <h3>Day 8: Arctic Circle Crossing</h3>
+              <p>Mo i Rana, Svartisen Glacier viewpoint</p>
+            </div>
+            <div class="marker-popup" id="popup-8-norway">
+              <h3>Day 9: Bodø & Saltstraumen</h3>
+              <p>Saltstraumen maelstrom, coastal town</p>
+            </div>
+            <div class="marker-popup" id="popup-9-norway">
+              <h3>Day 10-11: Lofoten Islands</h3>
+              <p>Reine, Hamnøy, fishing villages</p>
+            </div>
+            <div class="marker-popup" id="popup-10-norway">
+              <h3>Day 12-13: Narvik & Northern Fjords</h3>
+              <p>Narvikfjellet cable car, war history</p>
+            </div>
+            <div class="marker-popup" id="popup-11-norway">
+              <h3>Day 14: Tromsø Departure</h3>
+              <p>Arctic Cathedral, final day, return flight</p>
             </div>
           </div>
 
           <!-- Маркеры для Австрии -->
           <div class="markers-container" id="austria-markers">
-            <!-- Маршрутная линия -->
-            <svg class="route-line" viewBox="0 0 1000 600" preserveAspectRatio="none">
-              <path class="line-path" d="M300,500 L400,450 L500,400 L600,350 L700,300" />
-            </svg>
-
             <!-- Маркеры -->
-            <div class="marker" data-day="1" style="top: 80%; left: 30%">1</div>
-            <div class="marker" data-day="2" style="top: 70%; left: 40%">2</div>
-            <div class="marker" data-day="3" style="top: 65%; left: 50%">3</div>
-            <div class="marker" data-day="4" style="top: 55%; left: 60%">4</div>
-            <div class="marker" data-day="5" style="top: 45%; left: 70%">5</div>
+            <div class="marker" data-day="1" style="top: 28%; left: 75%"></div>
+            <div class="marker" data-day="2" style="top: 30%; left: 68.5%"></div>
+            <div class="marker" data-day="3" style="top: 54%; left: 52%"></div>
+            <div class="marker" data-day="4" style="top: 52%; left: 54.5%"></div>
+            <div class="marker" data-day="5" style="top: 64%; left: 53%"></div>
+            <div class="marker" data-day="6" style="top: 69%; left: 54%"></div>
+            <div class="marker" data-day="7" style="top: 63%; left: 49%"></div>
+            <div class="marker" data-day="8" style="top: 74%; left: 42%"></div>
+            <div class="marker" data-day="9" style="top: 79%; left: 42%"></div>
+            <div class="marker" data-day="10" style="top: 73%; left: 45%"></div>
+            <div class="marker" data-day="11" style="top: 73%; left: 47%"></div>
 
-            <!-- Попапы -->
+            <!-- Попапы с реальной информацией -->
             <div class="marker-popup" id="popup-1-austria">
-              <h3>Day 1: Vienna</h3>
-              <p>Arrival and city exploration</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 1-2: Vienna Arrival</h3>
+              <p>Imperial palaces, historic center exploration</p>
             </div>
             <div class="marker-popup" id="popup-2-austria">
-              <h3>Day 2: Salzburg</h3>
-              <p>Mozart's birthplace</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 3: Wachau Valley</h3>
+              <p>Danube cruise, Melk Abbey, wine villages</p>
             </div>
             <div class="marker-popup" id="popup-3-austria">
-              <h3>Day 3: Hallstatt</h3>
-              <p>UNESCO village and lake</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 4: Salzburg</h3>
+              <p>Mozart's birthplace, Hohensalzburg Fortress</p>
             </div>
             <div class="marker-popup" id="popup-4-austria">
-              <h3>Day 4: Grossglockner</h3>
-              <p>High Alpine Road drive</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 5: Salzkammergut Lakes</h3>
+              <p>Hallstatt, Dachstein Ice Caves</p>
             </div>
             <div class="marker-popup" id="popup-5-austria">
-              <h3>Day 5: Innsbruck</h3>
-              <p>Tyrolean capital and mountains</p>
-              <small>Click to highlight this day</small>
+              <h3>Day 6: Grossglockner High Alpine Road</h3>
+              <p>Panoramic drive, Austria's highest peak</p>
+            </div>
+            <div class="marker-popup" id="popup-6-austria">
+              <h3>Day 7: Zell am See</h3>
+              <p>Lake activities, Schmittenhöhe cable car</p>
+            </div>
+            <div class="marker-popup" id="popup-7-austria">
+              <h3>Day 8: Kitzbühel</h3>
+              <p>Alpine town, Hahnenkamm ski run</p>
+            </div>
+            <div class="marker-popup" id="popup-8-austria">
+              <h3>Day 9: Innsbruck</h3>
+              <p>Golden Roof, Nordkette cable car</p>
+            </div>
+            <div class="marker-popup" id="popup-9-austria">
+              <h3>Day 10: Stubai Glacier</h3>
+              <p>Glacial adventure, Ice Grotto</p>
+            </div>
+            <div class="marker-popup" id="popup-10-austria">
+              <h3>Day 11: Tyrolean Alps</h3>
+              <p>Alpine passes, traditional villages</p>
+            </div>
+            <div class="marker-popup" id="popup-11-austria">
+              <h3>Day 12: Return to Vienna</h3>
+              <p>Final alpine views, departure</p>
             </div>
           </div>
         </div>
@@ -782,119 +826,305 @@
                   <div class="routes__slider">
                     <div class="swiper">
                       <div class="swiper-wrapper">
-                        <!-- Слайды для Норвегии -->
+                        <!-- Слайд 1: Дни 1-2 -->
                         <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 1:</span>
-                          <h4 class="swiper-slide__title">Arrival in Bergen & Motorhome Pick-up</h4>
+                          <span class="swiper-slide__day">Day 1-2:</span>
+                          <h4 class="swiper-slide__title">Arrival in Bergen & City Exploration</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Arrive in Bergen, pick up your motorhome. Complete
-                                a thorough briefing and vehicle check. Stock up on groceries and
-                                supplies for the first 3-4 days.
+                                <b>Activity:</b> Arrive Bergen Airport, motorhome pick-up and
+                                briefing. Day 1: Settle in, grocery shopping. Day 2: Full day
+                                exploring Bergen - Bryggen Wharf (UNESCO), Fish Market, Fløibanen
+                                funicular to Mount Fløyen.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Evening stroll through the historic Bryggen Wharf,
-                                a UNESCO World Heritage site.
+                                <b>Highlight:</b> Panoramic views from Fløyen (320m), historic
+                                Hanseatic buildings at Bryggen, fresh seafood at the Fish Market.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Bergen Camping Park or similar certified motorhome
-                                parking.
+                                <b>Overnight:</b> Bergen Camping Park (2 nights). Distance covered:
+                                Local exploration only.
                               </p>
                             </li>
                           </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 2:</span>
-                          <h4 class="swiper-slide__title">Bergen to Flåm</h4>
-                          <ul class="swiper-slide__info">
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive from Bergen to Flåm via the scenic roads
-                                along the fjords.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Flåm Railway journey, one of the world's most
-                                beautiful train rides.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Flåm Camping with stunning fjord views.
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
+
+                        <!-- Слайд 2: День 3 -->
                         <div class="swiper-slide">
                           <span class="swiper-slide__day">Day 3:</span>
+                          <h4 class="swiper-slide__title">Bergen to Flåm via Voss</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Scenic drive E16 to Flåm (170km, 3 hours). Stop in
+                                Voss for lunch - adventure capital of Norway. Afternoon: Flåm
+                                Railway (Flåmsbana) journey.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Flåm Railway - world's steepest railway gradient,
+                                waterfalls Kjosfossen & Rjoandefossen. Evening fjord walk in
+                                Aurlandsfjord.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Flåm Camping. Driving distance: 170km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 3: День 4 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 4:</span>
                           <h4 class="swiper-slide__title">Flåm to Geiranger</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive through stunning landscapes to Geiranger,
-                                home to one of Norway's most famous fjords.
+                                <b>Activity:</b> Drive via Sognefjellet Mountain Road (National
+                                Tourist Route). Optional morning fjord cruise on Naerøyfjord
+                                (UNESCO). Afternoon drive to Geiranger (200km, 4-5 hours).
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Geirangerfjord cruise to see the Seven Sisters and
-                                Bridal Veil waterfalls.
+                                <b>Highlight:</b> Geirangerfjord cruise (1.5 hours) past Seven
+                                Sisters, Bridal Veil waterfalls. Dalsnibba viewpoint (1500m) for
+                                stunning fjord panorama.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Geiranger Camping.
+                                <b>Overnight:</b> Geiranger Camping. Driving distance: 200km.
                               </p>
                             </li>
                           </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 4:</span>
-                          <h4 class="swiper-slide__title">Geiranger to Trollstigen</h4>
-                          <ul class="swiper-slide__info">
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive the famous Troll's Path (Trollstigen) with
-                                its 11 hairpin turns.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Viewing platforms overlooking the dramatic valley.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Trollstigen Camping.
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
+
+                        <!-- Слайд 4: День 5 -->
                         <div class="swiper-slide">
                           <span class="swiper-slide__day">Day 5:</span>
-                          <h4 class="swiper-slide__title">Atlantic Ocean Road</h4>
+                          <h4 class="swiper-slide__title">Geiranger to Trollstigen & Åndalsnes</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive the iconic Atlantic Ocean Road, connecting
-                                small islands with dramatic bridges.
+                                <b>Activity:</b> Drive Eagle Road (Ørnevegen) with 11 hairpin turns.
+                                Continue to Trollstigen (Troll's Path) - famous mountain road with
+                                viewing platforms. Evening in Åndalsnes.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Photography stops along the winding road with
-                                ocean views.
+                                <b>Highlight:</b> Trollstigen viewing platform overlooking
+                                Isterdalen valley with Stigfossen waterfall (320m drop).
+                                Romsdalseggen ridge views.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Camping along the Atlantic coast.
+                                <b>Overnight:</b> Trollstigen Camping or Åndalsnes camping. Driving
+                                distance: 110km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 5: День 6 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 6:</span>
+                          <h4 class="swiper-slide__title">Atlantic Ocean Road to Kristiansund</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to Atlantic Ocean Road (Atlanterhavsveien) -
+                                8.3km engineering marvel. Stop at each of 8 bridges for photography.
+                                Continue to Kristiansund.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Storseisundet Bridge - iconic arch appearing to
+                                dive into ocean. Håholmen fishing village visit. Atlantic Road
+                                viewing platform.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Kristiansund Camping. Driving distance: 250km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 6: День 7 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 7:</span>
+                          <h4 class="swiper-slide__title">Kristiansund to Trondheim</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Coastal drive to Trondheim (190km, 3.5 hours).
+                                Afternoon exploring Norway's third largest city and former Viking
+                                capital.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Nidaros Cathedral - Norway's national sanctuary.
+                                Bakklandet district with colorful wooden houses. Old Town Bridge
+                                (Gamle Bybro).
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Trondheim Camping. Driving distance: 190km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 7: День 8 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 8:</span>
+                          <h4 class="swiper-slide__title">
+                            Trondheim to Mo i Rana (Arctic Circle)
+                          </h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive north on E6 (420km, 6-7 hours). Cross the
+                                Arctic Circle at the Arctic Circle Center. Optional stop at
+                                Svartisen Glacier viewpoint.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Arctic Circle crossing ceremony (certificate
+                                available). Svartisen Glacier - mainland Europe's second largest.
+                                Arrival in Mo i Rana - gateway to Arctic.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Mo i Rana Camping. Driving distance: 420km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 8: День 9 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 9:</span>
+                          <h4 class="swiper-slide__title">Mo i Rana to Bodø</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to Bodø (170km, 3 hours). Visit Saltstraumen
+                                - world's strongest tidal maelstrom. Explore Bodø, European Capital
+                                of Culture 2024.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Saltstraumen maelstrom viewing (check tide times).
+                                Norwegian Aviation Museum. Midnight sun viewing from Keiservarden
+                                viewpoint.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Bodø Camping. Driving distance: 170km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 9: Дни 10-11 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 10-11:</span>
+                          <h4 class="swiper-slide__title">Lofoten Islands Exploration</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Day 10: Ferry Bodø-Moskenes (3.5-4 hours). Drive to
+                                Reine. Day 11: Explore Lofoten - Å fishing village, Nusfjord (UNESCO
+                                candidate), beaches, optional hiking.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Reinebringen hike (stairs) for iconic Lofoten
+                                view. Hamnøy and Sakrisøy fishing villages. Lofotr Viking Museum at
+                                Borg.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Reine Camping or Lofoten Beach Camp (2 nights).
+                                Driving distance: 100km exploring.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 10: Дни 12-13 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 12-13:</span>
+                          <h4 class="swiper-slide__title">Lofoten to Narvik & Northern Fjords</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Day 12: Drive to Narvik via ferry Svolvær-Skutvik.
+                                Day 13: Explore Narvik - cable car, war museum, fjord cruise in
+                                Ofotfjord.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Narvikfjellet cable car to 656m for panoramic
+                                views. War Museum detailing WWII Arctic battles. Midnight sun over
+                                fjords.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Narvik Camping (2 nights). Driving distance: 250km
+                                + ferry.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 11: День 14 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 14:</span>
+                          <h4 class="swiper-slide__title">Narvik to Tromsø & Departure</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Morning drive to Tromsø (250km, 4 hours). Return
+                                motorhome at airport. Optional final activities: Arctic Cathedral,
+                                Polaria, cable car. Evening flight departure.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Arctic Cathedral (Ishavskatedralen) - iconic
+                                architecture. Fjellheisen cable car for final Arctic views. Mack
+                                Brewery - world's northernmost.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Journey Summary:</b> 14 days, ~2200km, Bergen to Tromsø, crossing
+                                Arctic Circle, experiencing fjords, mountains, and midnight sun.
                               </p>
                             </li>
                           </ul>
@@ -1001,117 +1231,308 @@
                       </div>
 
                       <div class="swiper-wrapper">
-                        <!-- Слайды для Австрии -->
+                        <!-- Слайд 1: Дни 1-2 -->
                         <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 1:</span>
-                          <h4 class="swiper-slide__title">Arrival in Vienna</h4>
+                          <span class="swiper-slide__day">Day 1-2:</span>
+                          <h4 class="swiper-slide__title">Arrival in Vienna & Imperial Capital</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Arrive in Vienna, pick up your vehicle. Explore the
-                                historic city center.
+                                <b>Activity:</b> Day 1: Arrive Vienna Airport, motorhome pick-up.
+                                Day 2: Full day exploring Vienna - Schönbrunn Palace (UNESCO), St.
+                                Stephen's Cathedral, Hofburg Palace. Evening Vienna State Opera
+                                optional.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Visit Schönbrunn Palace and St. Stephen's
-                                Cathedral.
+                                <b>Highlight:</b> Schönbrunn Palace gardens and Gloriette viewpoint.
+                                Historic center ring road (Ringstraße). Traditional coffee house
+                                experience.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Vienna Camping or city hotel.
+                                <b>Overnight:</b> Wien Camping Neue Donau (2 nights). Distance: City
+                                exploration only.
                               </p>
                             </li>
                           </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 2:</span>
-                          <h4 class="swiper-slide__title">Vienna to Salzburg</h4>
-                          <ul class="swiper-slide__info">
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive from Vienna to Salzburg through the Austrian
-                                countryside.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Explore Mozart's birthplace and the Hohensalzburg
-                                Fortress.
-                              </p>
-                            </li>
-                            <li class="swiper-slide__info--item">
-                              <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Salzburg Camping.
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
+
+                        <!-- Слайд 2: День 3 -->
                         <div class="swiper-slide">
                           <span class="swiper-slide__day">Day 3:</span>
-                          <h4 class="swiper-slide__title">Salzburg to Hallstatt</h4>
+                          <h4 class="swiper-slide__title">Vienna to Wachau Valley & Melk</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive to the picturesque village of Hallstatt, a
-                                UNESCO World Heritage site.
+                                <b>Activity:</b> Drive along Danube to Wachau Valley (UNESCO). Visit
+                                Melk Abbey - Baroque masterpiece. Optional Danube cruise from Melk
+                                to Krems. Explore Dürnstein village.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Boat tour on Hallstätter See and visit to the Salt
-                                Mine.
+                                <b>Highlight:</b> Melk Abbey library with 100,000 volumes. Dürnstein
+                                ruins with Danube views. Wachau apricot products and local wines.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Hallstatt Camping with lake views.
+                                <b>Overnight:</b> Campingplatz Melk or nearby. Driving distance:
+                                90km.
                               </p>
                             </li>
                           </ul>
                         </div>
+
+                        <!-- Слайд 3: День 4 -->
                         <div class="swiper-slide">
                           <span class="swiper-slide__day">Day 4:</span>
+                          <h4 class="swiper-slide__title">Wachau to Salzburg</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to Salzburg (250km, 3 hours). Afternoon
+                                exploring Mozart's birthplace. Evening Sound of Music tour optional.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Hohensalzburg Fortress (cable car or walk up).
+                                Mozart's Birthplace museum. Mirabell Palace gardens (Sound of Music
+                                filming location).
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping Nord-Sam (Salzburg) or nearby. Driving
+                                distance: 250km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 4: День 5 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 5:</span>
+                          <h4 class="swiper-slide__title">Salzburg to Hallstatt & Salzkammergut</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Morning drive to Hallstatt (UNESCO). Boat tour on
+                                Hallstätter See. Visit Salt Mine (world's oldest). Explore Gosau
+                                lakes area.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Hallstatt viewpoint (classic photo spot).
+                                Dachstein Ice Caves (5 Fingers viewing platform). Hallstatt Skywalk.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping Klausner-Höll or Hallstatt camping.
+                                Driving distance: 80km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 5: День 6 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 6:</span>
                           <h4 class="swiper-slide__title">Grossglockner High Alpine Road</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive the spectacular Grossglockner High Alpine
-                                Road.
+                                <b>Activity:</b> Full day on Grossglockner High Alpine Road (48km
+                                toll road). Multiple stops at viewpoints, visitor centers, and
+                                hiking trails. Drive to highest point (Edelweißspitze 2571m).
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Panoramic views of Austria's highest mountain,
-                                Grossglockner.
+                                <b>Highlight:</b> Kaiser-Franz-Josefs-Höhe viewpoint (Grossglockner
+                                3798m). Pasterze Glacier - Austria's largest. Alpine wildlife
+                                observation (marmots, ibex).
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Alpine hut or camping in Heiligenblut.
+                                <b>Overnight:</b> Heiligenblut camping or Matrei in Osttirol.
+                                Driving distance: 120km (including alpine road).
                               </p>
                             </li>
                           </ul>
                         </div>
+
+                        <!-- Слайд 6: День 7 -->
                         <div class="swiper-slide">
-                          <span class="swiper-slide__day">Day 5:</span>
-                          <h4 class="swiper-slide__title">Innsbruck and Tyrolean Alps</h4>
+                          <span class="swiper-slide__day">Day 7:</span>
+                          <h4 class="swiper-slide__title">Heiligenblut to Zell am See</h4>
                           <ul class="swiper-slide__info">
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Activity:</b> Drive to Innsbruck, capital of the Tyrol region.
+                                <b>Activity:</b> Morning in Heiligenblut - pilgrimage church visit.
+                                Drive to Zell am See (65km). Afternoon lake activities: boat cruise,
+                                swimming, or cycling around lake.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Highlight:</b> Visit the Golden Roof and take the cable car to
-                                Nordkette.
+                                <b>Highlight:</b> Schmittenhöhe cable car to 2000m for panoramic
+                                views. Zell am See promenade. Boat tour on Lake Zell with mountain
+                                reflections.
                               </p>
                             </li>
                             <li class="swiper-slide__info--item">
                               <p class="swiper-slide__info--desc">
-                                <b>Overnight:</b> Innsbruck Camping.
+                                <b>Overnight:</b> Camping Norden or Zell am See camping. Driving
+                                distance: 65km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 7: День 8 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 8:</span>
+                          <h4 class="swiper-slide__title">Zell am See to Kitzbühel</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Short drive to Kitzbühel (45km). Explore historic
+                                town center. Optional hike or cable car to Kitzbüheler Horn (1996m)
+                                or Hahnenkamm (famous ski race).
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Kitzbühel old town with painted buildings.
+                                Hahnenkamm Streif downhill course (summer luge available).
+                                Schwarzsee lake.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping Kitzbühel or nearby. Driving distance:
+                                45km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 8: День 9 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 9:</span>
+                          <h4 class="swiper-slide__title">Kitzbühel to Innsbruck</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive to Innsbruck (95km). Explore Tyrolean
+                                capital. Visit Golden Roof, Hofburg Palace, and Cathedral. Evening
+                                Nordkette cable car for sunset views.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Nordkette cable car to Hafelekar (2256m) - "Top of
+                                Innsbruck". Golden Roof (Goldenes Dachl) - symbol of city. Bergisel
+                                Ski Jump viewing platform.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping Innsbruck or Kranebitten camping. Driving
+                                distance: 95km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 9: День 10 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 10:</span>
+                          <h4 class="swiper-slide__title">Innsbruck to Stubai Glacier</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Day trip to Stubai Glacier (40km). Glacier cable
+                                car to 3210m. Visit Ice Grotto, suspension bridge. Optional summer
+                                skiing/snowboarding.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Stubai Glacier viewing platform at 3210m. TOP OF
+                                TYROL suspension bridge. Year-round snow activities. Panoramic
+                                restaurant with glacier views.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Return to Innsbruck camping (same as previous
+                                night). Driving distance: 80km round trip.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 10: День 11 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 11:</span>
+                          <h4 class="swiper-slide__title">Tyrolean Alps to Zillertal Valley</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Drive through Tyrolean Alps to Zillertal Valley.
+                                Optional stops: Swarovski Crystal Worlds in Wattens, medieval
+                                Rattenberg (smallest town in Austria).
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Zillertal Alpine Road scenic drive. Mayrhofen
+                                cable cars to Ahorn (2000m) or Penken (2095m). Traditional Tyrolean
+                                dinner in mountain hut.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Overnight:</b> Camping Mayrhofen or Zillertal camping. Driving
+                                distance: 100km.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Слайд 11: День 12 -->
+                        <div class="swiper-slide">
+                          <span class="swiper-slide__day">Day 12:</span>
+                          <h4 class="swiper-slide__title">Zillertal to Vienna & Departure</h4>
+                          <ul class="swiper-slide__info">
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Activity:</b> Morning drive back to Vienna (480km, 5-6 hours).
+                                Return motorhome at airport. Optional final stop at St. Florian
+                                Monastery (Baroque architecture) or Linz.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Highlight:</b> Final alpine views through Tyrol. St. Florian
+                                Monastery (largest monastery in Upper Austria). Last Austrian coffee
+                                and pastry before departure.
+                              </p>
+                            </li>
+                            <li class="swiper-slide__info--item">
+                              <p class="swiper-slide__info--desc">
+                                <b>Journey Summary:</b> 12 days, ~1300km, Vienna circuit through
+                                Alps, 5 UNESCO sites, highest roads and glaciers, cultural and
+                                natural highlights.
                               </p>
                             </li>
                           </ul>
@@ -1130,8 +1551,43 @@
       <section class="section reviews" id="reviews">
         <div class="container">
           <div class="section__wrapper">
-            <h2 class="section__title">reviews</h2>
-            <p class="section__desc">happy travelers</p>
+            <div class="section__item">
+              <h2 class="section__title">reviews</h2>
+              <p class="section__desc">happy travelers</p>
+            </div>
+            <!-- Навигация слайдера -->
+            <div class="reviews__nav">
+              <button class="reviews__prev" id="reviewsPrev">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="reviews__next" id="reviewsNext">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="reviews__wrapper">
             <!-- Слайдер -->
@@ -1618,43 +2074,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- Навигация слайдера -->
-              <div class="reviews__nav">
-                <button class="reviews__prev" id="reviewsPrev">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M15 18L9 12L15 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </button>
-                <div class="reviews__counter">
-                  <span id="currentSlide">1</span> / <span id="totalSlides">4</span>
-                </div>
-                <button class="reviews__next" id="reviewsNext">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M9 18L15 12L9 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </button>
               </div>
 
               <!-- Пагинация -->
