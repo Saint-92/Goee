@@ -706,10 +706,9 @@ body {
         }
         
         &--btn {
-            border: 1px solid var(--primary-color);
             padding: 10px 20px;
             border-radius: 40px;
-            background: transparent;
+            background: var(--grey-color);
             color: var(--primary-color);
             font-family: 'Inter Tight', sans-serif;
             font-weight: 500;

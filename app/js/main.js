@@ -601,64 +601,84 @@ function initReviews() {
     },
   });
   
-  // Получаем текущее количество видимых слайдов
-  function getSlidesPerView() {
-    if (window.innerWidth < 768) return 1;
-    if (window.innerWidth < 992) return 2;
-    return 3;
-  }
-  
-  // Обновляем счетчик и пагинацию
-  function updateAll() {
-    const slidesPerView = getSlidesPerView();
+  function updateCounter() {
+    let slidesPerView;
+    if (window.innerWidth < 768) {
+      slidesPerView = 1; 
+    } else if (window.innerWidth < 992) {
+      slidesPerView = 2; 
+    } else {
+      slidesPerView = 3; 
+    }
+    
     const current = swiper.realIndex + 1;
     const total = Math.max(swiper.slides.length - slidesPerView + 1, 1);
     
-    // Обновляем цифровой счетчик
     const currentSlideEl = document.getElementById('currentSlide');
     const totalSlidesEl = document.getElementById('totalSlides');
+    
     if (currentSlideEl) currentSlideEl.textContent = current;
     if (totalSlidesEl) totalSlidesEl.textContent = total;
-    
-    // Обновляем буллеты
+
     const paginationContainer = document.getElementById('reviewsPagination');
-    if (paginationContainer) {
-      paginationContainer.innerHTML = '';
+    if (!paginationContainer) return;
+
+    paginationContainer.innerHTML = '';
+    
+    for (let i = 0; i < total; i++) {
+      const bullet = document.createElement('div');
+      bullet.className = 'reviews__pagination--bullet' + (i === swiper.realIndex ? ' active' : '');
+      bullet.setAttribute('data-index', i);
+      bullet.setAttribute('aria-label', `Go to review ${i + 1}`);
       
-      for (let i = 0; i < total; i++) {
-        const bullet = document.createElement('div');
-        bullet.className = `reviews__pagination--bullet${i === swiper.realIndex ? ' active' : ''}`;
-        bullet.dataset.index = i;
-        bullet.setAttribute('aria-label', `Go to review ${i + 1}`);
-        bullet.addEventListener('click', () => swiper.slideTo(i));
-        paginationContainer.appendChild(bullet);
-      }
+      bullet.addEventListener('click', () => swiper.slideTo(i));
+      paginationContainer.appendChild(bullet);
     }
   }
   
-  // Оптимизация ресайза
-  let resizeTimeout;
+  function updatePagination() {
+    const bullets = document.querySelectorAll('.reviews__pagination--bullet');
+    const activeIndex = swiper.realIndex;
+    
+    bullets.forEach((bullet, index) => {
+      if (index === activeIndex) {
+        bullet.classList.add('active');
+      } else {
+        bullet.classList.remove('active');
+      }
+    });
+  }
+  
   function handleResize() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(updateAll, 150);
+    updateCounter();
   }
   
   // Инициализация
-  updateAll();
+  updateCounter();
   
-  // Обработчики событий
-  swiper.on('slideChange', () => {
-    // Только обновляем активный буллет и счетчик (без пересоздания всей пагинации)
-    const bullets = document.querySelectorAll('.reviews__pagination--bullet');
+  swiper.on('slideChange', function() {
+    let slidesPerView;
+    if (window.innerWidth < 768) {
+      slidesPerView = 1;
+    } else if (window.innerWidth < 992) {
+      slidesPerView = 2;
+    } else {
+      slidesPerView = 3;
+    }
+    
+    const current = swiper.realIndex + 1;
+    const total = Math.max(swiper.slides.length - slidesPerView + 1, 1);
+    
     const currentSlideEl = document.getElementById('currentSlide');
+    const totalSlidesEl = document.getElementById('totalSlides');
     
-    if (currentSlideEl) currentSlideEl.textContent = swiper.realIndex + 1;
+    if (currentSlideEl) currentSlideEl.textContent = current;
+    if (totalSlidesEl) totalSlidesEl.textContent = total;
     
-    bullets.forEach((bullet, index) => {
-      bullet.classList.toggle('active', index === swiper.realIndex);
-    });
+    updatePagination();
   });
   
+  // Правильно добавляем обработчик ресайза
   window.addEventListener('resize', handleResize);
 }
 
